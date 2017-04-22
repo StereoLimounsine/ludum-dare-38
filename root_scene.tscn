@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=1]
+[gd_scene load_steps=6 format=1]
 
 [ext_resource path="res://root_scene.gd" type="Script" id=1]
 [ext_resource path="res://player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://collider.tscn" type="PackedScene" id=3]
 [ext_resource path="res://main_label.gd" type="Script" id=4]
+[ext_resource path="res://inventory.tscn" type="PackedScene" id=5]
 
 [node name="Node" type="Node"]
 
@@ -68,5 +69,9 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 script/script = ExtResource( 4 )
+
+[node name="Node2D" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 8.17569, 62.5011 )
 
 
