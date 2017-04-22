@@ -22,4 +22,23 @@ texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 0, 320, 221, 128 )
 
+[node name="snow_biome" type="Sprite" parent="."]
+
+visibility/visible = false
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 0, 480, 221, 128 )
+
+[node name="water_biome" type="Sprite" parent="."]
+
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 249, 0, 221, 128 )
+
+[node name="grave_biome" type="Sprite" parent="."]
+
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 249, 160, 221, 128 )
+
 
