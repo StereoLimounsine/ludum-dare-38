@@ -1,18 +1,18 @@
 extends KinematicBody2D
 
-const MOTION_SPEED = 160 # Pixels/seconds
+const MOTION_SPEED = 16 # Pixels/seconds
 
 
 func _fixed_process(delta):
 	var motion = Vector2()
 
-	if (Input.is_action_pressed("move_up")):
+	if (Input.is_key_pressed(KEY_W)):
 		motion += Vector2(0, -1)
-	if (Input.is_action_pressed("move_bottom")):
+	if (Input.is_key_pressed(KEY_S)):
 		motion += Vector2(0, 1)
-	if (Input.is_action_pressed("move_left")):
+	if (Input.is_key_pressed(KEY_A)):
 		motion += Vector2(-1, 0)
-	if (Input.is_action_pressed("move_right")):
+	if (Input.is_key_pressed(KEY_D)):
 		motion += Vector2(1, 0)
 
 	motion = motion.normalized()*MOTION_SPEED*delta
