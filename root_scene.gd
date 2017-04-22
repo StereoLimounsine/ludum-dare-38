@@ -1,11 +1,11 @@
 extends Node
 
 var scene_loaded = false
-var current_index = 0
+var current_index = 2
 var scene = preload("grass_level.tscn").instance()
 const scene_paths = [
-  "grass_level.tscn", "concrete_level.tscn",
   "grave_level.tscn", "sand_level.tscn",
+  "grass_level.tscn", "concrete_level.tscn",
   "snow_level.tscn", "water_level.tscn"
 ]
 
