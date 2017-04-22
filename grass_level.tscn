@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=1]
+[gd_scene load_steps=3 format=1]
 
 [ext_resource path="res://tilemap.tres" type="TileSet" id=1]
+[ext_resource path="res://spring_tree.tscn" type="PackedScene" id=2]
 
 [node name="Node2D" type="Node2D"]
 
@@ -21,5 +22,9 @@ collision/layers = 1
 collision/mask = 1
 occluder/light_mask = 1
 tile_data = IntArray( -1048578, 1073741824, -1, 1073741824 )
+
+[node name="RigidBody2D" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( -40.7162, -48.2776 )
 
 
