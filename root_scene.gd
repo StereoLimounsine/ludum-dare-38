@@ -1,13 +1,28 @@
 extends Node
 
 var scene_loaded = false
-var current_index = 0
-var scene = preload("grass_level.tscn").instance()
+var current_index = 2
+var scene = null
 const scene_paths = [
-  "grass_level.tscn", "concrete_level.tscn",
   "grave_level.tscn", "sand_level.tscn",
+  "grass_level.tscn", "concrete_level.tscn",
   "snow_level.tscn", "water_level.tscn"
 ]
+var loaded_scenes = {}
+
+func switch_scene():
+	var scene_path = scene_paths[current_index]
+	var new_scene
+	if(loaded_scenes.has(scene_path)):
+		new_scene = loaded_scenes[scene_path]
+	else:
+		new_scene = load(scene_path).instance()
+		loaded_scenes[scene_path] = new_scene
+	add_child(new_scene)
+	if(scene):
+		remove_child(scene)
+	scene = new_scene
+	scene_loaded = true
 
 func _fixed_process(delta):
 	if(Input.is_key_pressed(KEY_K) && 
@@ -23,14 +38,8 @@ func _fixed_process(delta):
 	if(!scene_loaded && 
 	   !Input.is_key_pressed(KEY_K) && 
 	   !Input.is_key_pressed(KEY_J)):
-		var scene_path = scene_paths[current_index]
-		var new_scene = load(scene_path).instance()
-		add_child(new_scene)
-		if(scene):
-			remove_child(scene)
-		scene = new_scene
-		scene_loaded = true
+		switch_scene()
 
 func _ready():
-	add_child(scene)
+	switch_scene()
 	set_fixed_process(true)
