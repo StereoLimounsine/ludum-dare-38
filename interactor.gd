@@ -20,15 +20,16 @@ func delayed_clear_label():
 	timer.start()
 
 func _fixed_process(delta):
-	if(Input.is_key_pressed(KEY_SPACE)):
-		update_label = true
-	elif(current_body && update_label):
-		update_label()
-		delayed_clear_label()
-		update_label = false
+	if(current_body):
+		if(Input.is_key_pressed(KEY_SPACE)):
+			update_label = true
+		elif(update_label):
+			update_label()
+			delayed_clear_label()
+			update_label = false
 
 func _on_Area2D_body_enter( body ):
-	if(self != body):
+	if(body.is_in_group("Player")):
 		current_body = body
 
 func _on_Area2D_body_exit( body ):

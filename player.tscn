@@ -6,9 +6,11 @@
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 13.78, 7.68621 )
+extents = Vector2( 10, 10 )
 
-[node name="player" type="KinematicBody2D"]
+[node name="player" type="KinematicBody2D" groups=[
+"Player",
+]]
 
 z/z = 1
 input/pickable = false
