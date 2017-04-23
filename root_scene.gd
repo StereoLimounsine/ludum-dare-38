@@ -8,8 +8,11 @@ const scene_paths = [
   "grass_level.tscn", "concrete_level.tscn",
   "snow_level.tscn", "water_level.tscn"
 ]
+const exit_scene_path = "exit_base.tscn"
+var exit_state = false
 var loaded_scenes = {}
 var play_video = false
+var exit_scene = load(exit_scene_path).instance()
 
 func finish():
 	var timer = get_node("Timer")
@@ -51,23 +54,31 @@ func switch_scene():
 	scene_loaded = true
 
 func _fixed_process(delta):
-	if(Input.is_key_pressed(KEY_K) && 
+	if(Input.is_key_pressed(KEY_ESCAPE)):
+		add_child(exit_scene)
+		exit_state = true
+	if(Input.is_key_pressed(KEY_P) && exit_state == true):
+		remove_child(exit_scene)
+		exit_state = false
+	if(Input.is_key_pressed(KEY_Q) && exit_state == true):
+		get_tree().quit()
+	if(Input.is_key_pressed(KEY_K) &&
 	   scene_loaded &&
 	   current_index + 1 < scene_paths.size()):
 		current_index += 1
 		scene_loaded = false
-	if(Input.is_key_pressed(KEY_J) && 
+	if(Input.is_key_pressed(KEY_J) &&
 	   scene_loaded &&
 	   current_index - 1 >= 0):
 		current_index -= 1
 		scene_loaded = false
-	if(!scene_loaded && 
-	   !Input.is_key_pressed(KEY_K) && 
+	if(!scene_loaded &&
+	   !Input.is_key_pressed(KEY_K) &&
 	   !Input.is_key_pressed(KEY_J)):
 		switch_scene()
 	try_video()
-	if(play_video && 
-	   (Input.is_key_pressed(KEY_Q) || 
+	if(play_video &&
+	   (Input.is_key_pressed(KEY_Q) ||
 	    Input.is_key_pressed(KEY_ESCAPE))):
 		get_tree().quit()
 

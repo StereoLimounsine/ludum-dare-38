@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://sprites/exit_base.png" type="Texture" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+transform/pos = Vector2( 0.890594, -54.7475 )
+z/z = 3
+
+[node name="Sprite" type="Sprite" parent="."]
+
+texture = ExtResource( 1 )
+
+

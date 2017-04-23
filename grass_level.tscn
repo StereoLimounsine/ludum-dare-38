@@ -12,9 +12,7 @@
 [ext_resource path="res://yellow_ruby_min.tscn" type="PackedScene" id=10]
 [ext_resource path="res://purple_ruby_min.tscn" type="PackedScene" id=11]
 
-[node name="Node2D" type="Node2D" groups=[
-"Levels",
-]]
+[node name="Node2D" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
 
@@ -54,6 +52,7 @@ transform/pos = Vector2( -11.56, -77.952 )
 
 transform/pos = Vector2( -6.4423, -123.51 )
 
+<<<<<<< HEAD
 [node name="Green ruby" parent="." instance=ExtResource( 6 )]
 
 transform/pos = Vector2( 33.5, -42 )
@@ -78,4 +77,6 @@ transform/pos = Vector2( -71.5, -71.9634 )
 
 transform/pos = Vector2( 12, -69 )
 
+=======
+>>>>>>> Add main menu and pause screen
 
