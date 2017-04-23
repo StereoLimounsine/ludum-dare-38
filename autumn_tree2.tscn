@@ -1,13 +1,14 @@
-[gd_scene load_steps=3 format=1]
+[gd_scene load_steps=4 format=1]
 
 [ext_resource path="res://sprites/autumn_tree2.png" type="Texture" id=1]
+[ext_resource path="res://interactor.tscn" type="PackedScene" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[node name="RigidBody2D" type="RigidBody2D"]
+[node name="Autumn Tree 2" type="RigidBody2D"]
 
 z/z = 2
 input/pickable = false
@@ -44,4 +45,16 @@ shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
 
+[node name="Area2D" parent="." instance=ExtResource( 2 )]
 
+[node name="CollisionShape2D" parent="Area2D"]
+
+transform/pos = Vector2( -0.446233, 8.69509 )
+transform/scale = Vector2( 0.836729, 1.1647 )
+
+[node name="Message" parent="Area2D"]
+
+text = "Autumn Tree 2"
+
+
+[editable path="Area2D"]

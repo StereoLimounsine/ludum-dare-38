@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=1]
+[gd_scene load_steps=11 format=1]
 
 [ext_resource path="res://sprites/pond.png" type="Texture" id=1]
+[ext_resource path="res://interactor.tscn" type="PackedScene" id=2]
 
 [sub_resource type="SegmentShape2D" id=1]
 
@@ -50,8 +51,9 @@ custom_solver_bias = 0.0
 a = Vector2( 12.6548, 9.48965 )
 b = Vector2( 0, 10 )
 
-[node name="RigidBody2D" type="RigidBody2D"]
+[node name="Pond" type="RigidBody2D"]
 
+transform/pos = Vector2( 6, -6 )
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 1, 0, 0, 0.858137, -19.8561, 1.01211 )
@@ -154,4 +156,19 @@ shape = SubResource( 8 )
 trigger = false
 _update_shape_index = 7
 
+[node name="Area2D" parent="." instance=ExtResource( 2 )]
 
+transform/pos = Vector2( -7.9108, 7.08948 )
+transform/scale = Vector2( 0.640625, 0.351562 )
+
+[node name="CollisionShape2D" parent="Area2D"]
+
+transform/pos = Vector2( 1.53294, 0.628911 )
+transform/scale = Vector2( 2.82343, 2.3047 )
+
+[node name="Message" parent="Area2D"]
+
+text = "Pond"
+
+
+[editable path="Area2D"]

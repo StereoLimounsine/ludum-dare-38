@@ -3,7 +3,12 @@ extends Node
 var visit_stack = []
 
 const riddle_stacks = {
-  "Red ruby": ["SpringTree1", "SpringTree2", "SpringTree3", "SpringTree4"]
+  "Red ruby": [
+    "Spring Tree 4 KEY", 
+    "Summer Tree KEY", 
+    "Autumn Tree KEY", 
+    "Winter Tree 2 KEY"
+  ]
 }
 
 func main_scene():
