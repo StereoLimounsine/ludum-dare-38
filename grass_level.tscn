@@ -5,9 +5,11 @@
 [ext_resource path="res://spring_tree.tscn" type="PackedScene" id=3]
 [ext_resource path="res://spring_tree2.tscn" type="PackedScene" id=4]
 [ext_resource path="res://spring_tree3.tscn" type="PackedScene" id=5]
-[ext_resource path="res://pickable.tscn" type="PackedScene" id=6]
+[ext_resource path="res://green_ruby_min.tscn" type="PackedScene" id=6]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" groups=[
+"Levels",
+]]
 
 [node name="TileMap" type="TileMap" parent="."]
 
@@ -47,8 +49,8 @@ transform/pos = Vector2( -11.56, -77.952 )
 
 transform/pos = Vector2( -6.4423, -123.51 )
 
-[node name="Area2D" parent="." instance=ExtResource( 6 )]
+[node name="Node2D" parent="." instance=ExtResource( 6 )]
 
-transform/pos = Vector2( 37, -47.5 )
+transform/pos = Vector2( 28, -40 )
 
 
