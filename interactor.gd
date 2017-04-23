@@ -6,12 +6,15 @@ var update_label = false
 func _ready():
 	set_fixed_process(true)
 
+func label():
+	get_tree().get_root().get_child(0).get_node("Game").get_node("Label")
+
 func update_label():
 	var message = get_node("Message").get_text()
-	get_tree().get_root().get_child(0).get_node("Label").update_text(self, message)
+	label().update_text(self, message)
 
 func clear_label():
-	get_tree().get_root().get_child(0).get_node("Label").clear_text(self)
+	label().clear_text(self)
 
 func delayed_clear_label():
 	var timer = get_node("Timer")
