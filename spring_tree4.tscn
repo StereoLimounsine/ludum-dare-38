@@ -10,6 +10,7 @@ extents = Vector2( 10, 10.0115 )
 
 [node name="RigidBody2D" type="RigidBody2D"]
 
+z/z = 2
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 0.0771349, 0, 0, 0.221091, -0.0511813, 3.18333 )
