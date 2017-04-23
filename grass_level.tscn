@@ -1,16 +1,16 @@
 [gd_scene load_steps=12 format=1]
 
 [ext_resource path="res://tilemap.tres" type="TileSet" id=1]
-[ext_resource path="res://spring_tree4.tscn" type="PackedScene" id=2]
-[ext_resource path="res://spring_tree.tscn" type="PackedScene" id=3]
-[ext_resource path="res://spring_tree2.tscn" type="PackedScene" id=4]
-[ext_resource path="res://spring_tree3.tscn" type="PackedScene" id=5]
-[ext_resource path="res://green_ruby_min.tscn" type="PackedScene" id=6]
-[ext_resource path="res://red_ruby_min.tscn" type="PackedScene" id=7]
-[ext_resource path="res://orange_ruby_min.tscn" type="PackedScene" id=8]
-[ext_resource path="res://blue_ruby_min.tscn" type="PackedScene" id=9]
-[ext_resource path="res://yellow_ruby_min.tscn" type="PackedScene" id=10]
-[ext_resource path="res://purple_ruby_min.tscn" type="PackedScene" id=11]
+[ext_resource path="res://green_ruby_min.tscn" type="PackedScene" id=2]
+[ext_resource path="res://red_ruby_min.tscn" type="PackedScene" id=3]
+[ext_resource path="res://orange_ruby_min.tscn" type="PackedScene" id=4]
+[ext_resource path="res://blue_ruby_min.tscn" type="PackedScene" id=5]
+[ext_resource path="res://yellow_ruby_min.tscn" type="PackedScene" id=6]
+[ext_resource path="res://purple_ruby_min.tscn" type="PackedScene" id=7]
+[ext_resource path="res://spring_tree.tscn" type="PackedScene" id=8]
+[ext_resource path="res://spring_tree2.tscn" type="PackedScene" id=9]
+[ext_resource path="res://spring_tree3.tscn" type="PackedScene" id=10]
+[ext_resource path="res://spring_tree4.tscn" type="PackedScene" id=11]
 
 [node name="Node2D" type="Node2D" groups=[
 "Levels",
@@ -34,48 +34,48 @@ collision/mask = 1
 occluder/light_mask = 1
 tile_data = IntArray( -1048578, 1073741824, -1, 1073741824 )
 
-[node name="RigidBody2D 5" parent="." instance=ExtResource( 2 )]
-
-transform/pos = Vector2( 12.3705, -95.9662 )
-
-[node name="RigidBody2D" parent="." instance=ExtResource( 3 )]
-
-transform/pos = Vector2( -40.7162, -48.2776 )
-
-[node name="RigidBody2D1" parent="." instance=ExtResource( 3 )]
-
-transform/pos = Vector2( -14.6826, -112.809 )
-
-[node name="RigidBody2D 3" parent="." instance=ExtResource( 4 )]
-
-transform/pos = Vector2( -11.56, -77.952 )
-
-[node name="RigidBody2D 4" parent="." instance=ExtResource( 5 )]
-
-transform/pos = Vector2( -6.4423, -123.51 )
-
-[node name="Green ruby" parent="." instance=ExtResource( 6 )]
+[node name="Green ruby" parent="." instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 33.5, -42 )
 
-[node name="Red ruby" parent="." instance=ExtResource( 7 )]
+[node name="Red ruby" parent="." instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 61, -61.5 )
 
-[node name="Orange ruby" parent="." instance=ExtResource( 8 )]
+[node name="Orange ruby" parent="." instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 44.5, -77.5 )
 
-[node name="Blue ruby" parent="." instance=ExtResource( 9 )]
+[node name="Blue ruby" parent="." instance=ExtResource( 5 )]
 
 transform/pos = Vector2( -44, -87.5 )
 
-[node name="Yellow ruby" parent="." instance=ExtResource( 10 )]
+[node name="Yellow ruby" parent="." instance=ExtResource( 6 )]
 
 transform/pos = Vector2( -71.5, -71.9634 )
 
-[node name="Purple ruby" parent="." instance=ExtResource( 11 )]
+[node name="Purple ruby" parent="." instance=ExtResource( 7 )]
 
 transform/pos = Vector2( 12, -69 )
+
+[node name="SpringTree1" parent="." instance=ExtResource( 8 )]
+
+transform/pos = Vector2( -41, -48 )
+
+[node name="SpringTree1 2" parent="." instance=ExtResource( 8 )]
+
+transform/pos = Vector2( -15, -113 )
+
+[node name="SpringTree2" parent="." instance=ExtResource( 9 )]
+
+transform/pos = Vector2( -12, -78 )
+
+[node name="SpringTree3" parent="." instance=ExtResource( 10 )]
+
+transform/pos = Vector2( -6, -123 )
+
+[node name="SpringTree4" parent="." instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 12, -96 )
 
 
