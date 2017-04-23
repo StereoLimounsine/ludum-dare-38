@@ -7,7 +7,7 @@ func _ready():
 	set_fixed_process(true)
 
 func label():
-	get_tree().get_root().get_child(0).get_node("Game").get_node("Label")
+	return get_tree().get_root().get_child(0).get_node("Game").get_node("Label")
 
 func update_label():
 	var message = get_node("Message").get_text()
