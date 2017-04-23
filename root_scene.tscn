@@ -70,8 +70,34 @@ lines_skipped = 0
 max_lines_visible = -1
 script/script = ExtResource( 4 )
 
-[node name="Node2D" parent="." instance=ExtResource( 5 )]
+[node name="Inventory" parent="." instance=ExtResource( 5 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 8.17569, 62.5011 )
 
+[node name="Green ruby" parent="Inventory/Rubies"]
 
+transform/pos = Vector2( 9.25, 35 )
+
+[node name="Yellow ruby" parent="Inventory/Rubies"]
+
+transform/pos = Vector2( -10, 34.75 )
+
+[node name="Orange ruby" parent="Inventory/Rubies"]
+
+transform/pos = Vector2( -28.5, 34.5 )
+
+[node name="Blue ruby" parent="Inventory/Rubies"]
+
+transform/pos = Vector2( 28.25, 35 )
+
+[node name="Red ruby" parent="Inventory/Rubies"]
+
+transform/pos = Vector2( -47.5, 34.75 )
+
+[node name="Purple ruby" parent="Inventory/Rubies"]
+
+transform/pos = Vector2( 47.5, 35 )
+
+
+[editable path="Inventory"]
