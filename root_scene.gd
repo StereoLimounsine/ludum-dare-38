@@ -66,6 +66,10 @@ func _fixed_process(delta):
 	   !Input.is_key_pressed(KEY_J)):
 		switch_scene()
 	try_video()
+	if(play_video && 
+	   (Input.is_key_pressed(KEY_Q) || 
+	    Input.is_key_pressed(KEY_ESCAPE))):
+		get_tree().quit()
 
 func _ready():
 	switch_scene()
