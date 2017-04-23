@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=1]
+[gd_scene load_steps=7 format=1]
 
 [ext_resource path="res://tilemap.tres" type="TileSet" id=1]
 [ext_resource path="res://spring_tree4.tscn" type="PackedScene" id=2]
 [ext_resource path="res://spring_tree.tscn" type="PackedScene" id=3]
 [ext_resource path="res://spring_tree2.tscn" type="PackedScene" id=4]
 [ext_resource path="res://spring_tree3.tscn" type="PackedScene" id=5]
+[ext_resource path="res://pickable.tscn" type="PackedScene" id=6]
 
 [node name="Node2D" type="Node2D"]
 
@@ -45,5 +46,9 @@ transform/pos = Vector2( -11.56, -77.952 )
 [node name="RigidBody2D 4" parent="." instance=ExtResource( 5 )]
 
 transform/pos = Vector2( -6.4423, -123.51 )
+
+[node name="Area2D" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 37, -47.5 )
 
 

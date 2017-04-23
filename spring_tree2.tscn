@@ -49,8 +49,8 @@ _update_shape_index = 0
 
 [node name="CollisionShape2D" parent="Area2D"]
 
-transform/pos = Vector2( 0.553446, -0.982915 )
-transform/scale = Vector2( 1.53484, 1.9251 )
+transform/pos = Vector2( 0.553446, -7.32767 )
+transform/scale = Vector2( 1.53484, 2.41316 )
 
 [node name="Message" parent="Area2D"]
 
