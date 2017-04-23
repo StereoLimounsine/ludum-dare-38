@@ -17,7 +17,7 @@ func update_label():
 	label().update_text(self, message)
 
 func add_to_global_stack():
-	var object = get_parent()
+	var object = get_parent().get_name()
 	main_scene().get_node("GameState").add_to_stack(object)
 
 func clear_label():

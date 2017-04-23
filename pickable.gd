@@ -14,7 +14,7 @@ func remove_map_object(root_scene):
 			break	
 
 func _on_Area2D_body_enter( body ):
-	if body.is_in_group("Player"):
+	if body.is_in_group("Player") && is_visible():
 		var root_scene = get_tree().get_root().get_child(0).get_node("Game")
 		remove_map_object(root_scene)
 		add_to_inventory(root_scene)

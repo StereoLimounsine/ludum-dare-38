@@ -1,6 +1,10 @@
 extends Node
 
-var stack = []
+var visit_stack = []
+
+const riddle_stacks = {
+  "Red ruby": ["SpringTree1", "SpringTree2", "SpringTree3", "SpringTree4"]
+}
 
 func main_scene():
 	return get_tree().get_root().get_child(0).get_node("Game")
@@ -12,8 +16,25 @@ func get_ruby(ruby_name):
 			return ruby_node
 	return null
 
+func last_n(array, n):
+	var retval = []
+	for i in range(n):
+		var index = -i - 1
+		if -index > array.size():
+			break
+		retval.push_front(array[index])
+	return retval
+
+func check_riddles():
+	for riddle_key in riddle_stacks:
+		var riddle = riddle_stacks[riddle_key]
+		var last_n = last_n(visit_stack, riddle.size())
+		if last_n == riddle:
+			get_ruby(riddle_key).show()
+
 func add_to_stack(object):
-	stack.push_back(object)
+	visit_stack.push_back(object)
+	check_riddles()
 
 func _ready():
 	pass
