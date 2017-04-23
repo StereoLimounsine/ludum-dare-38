@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=1]
 
-[ext_resource path="res://spring_tree.png" type="Texture" id=1]
+[ext_resource path="res://sprites/spring_tree.png" type="Texture" id=1]
 [ext_resource path="res://interactor.tscn" type="PackedScene" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
