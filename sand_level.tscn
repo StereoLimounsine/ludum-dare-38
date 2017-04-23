@@ -1,10 +1,23 @@
-[gd_scene load_steps=2 format=1]
+[gd_scene load_steps=15 format=1]
 
 [ext_resource path="res://tilemap.tres" type="TileSet" id=1]
+[ext_resource path="res://carpet.tscn" type="PackedScene" id=2]
+[ext_resource path="res://sand_rock1.tscn" type="PackedScene" id=3]
+[ext_resource path="res://sand_rock2.tscn" type="PackedScene" id=4]
+[ext_resource path="res://sand_rock3.tscn" type="PackedScene" id=5]
+[ext_resource path="res://fatamorgana.tscn" type="PackedScene" id=6]
+[ext_resource path="res://sand_rock4.tscn" type="PackedScene" id=7]
+[ext_resource path="res://obelisk1.tscn" type="PackedScene" id=8]
+[ext_resource path="res://obelisk2.tscn" type="PackedScene" id=9]
+[ext_resource path="res://obelisk3.tscn" type="PackedScene" id=10]
+[ext_resource path="res://pyramid.tscn" type="PackedScene" id=11]
+[ext_resource path="res://obelisk4.tscn" type="PackedScene" id=12]
+[ext_resource path="res://obelisk5.tscn" type="PackedScene" id=13]
+[ext_resource path="res://obelisk6.tscn" type="PackedScene" id=14]
 
-[node name="Node2D" type="Node2D" groups=[
-"Levels",
-]]
+[node name="Node2D" type="Node2D" groups=[ "Levels" ]]
+
+transform/pos = Vector2( -1, 0 )
 
 [node name="TileMap" type="TileMap" parent="."]
 
@@ -23,5 +36,85 @@ collision/layers = 1
 collision/mask = 1
 occluder/light_mask = 1
 tile_data = IntArray( -1, 1 )
+
+[node name="Carpet" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( -17.1349, -100.542 )
+
+[node name="Sand Rock 1" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( -64, -83 )
+
+[node name="Sand Rock2" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 93, -67 )
+
+[node name="Sand Rock 2" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 28, -72 )
+
+[node name="Sand Rock3" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( -5, -12 )
+
+[node name="Sand Rock6" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( -71, -52 )
+
+[node name="Sand Rock 3" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( -21, -72 )
+
+[node name="Sand Rock4" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( -31, -108 )
+
+[node name="RigidBody2D" parent="." instance=ExtResource( 6 )]
+
+transform/pos = Vector2( 4, -87 )
+
+[node name="Sand Rock 4" parent="." instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 1, -118 )
+
+[node name="Sand Rock5" parent="." instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 42, -42 )
+
+[node name="Sand Rock7" parent="." instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 41, -98 )
+
+[node name="Obelisk 1" parent="." instance=ExtResource( 8 )]
+
+transform/pos = Vector2( 13, -47 )
+
+[node name="Obelisk2" parent="." instance=ExtResource( 8 )]
+
+transform/pos = Vector2( 13, -47 )
+
+[node name="Obelisk 2" parent="." instance=ExtResource( 9 )]
+
+transform/pos = Vector2( -93, -74 )
+
+[node name="Obelisk 3" parent="." instance=ExtResource( 10 )]
+
+transform/pos = Vector2( -42, -94 )
+
+[node name="Pyramid" parent="." instance=ExtResource( 11 )]
+
+transform/pos = Vector2( -27.5047, -36.7092 )
+
+[node name="Obelisk 4" parent="." instance=ExtResource( 12 )]
+
+transform/pos = Vector2( 68, -83 )
+
+[node name="Obelisk 5" parent="." instance=ExtResource( 13 )]
+
+transform/pos = Vector2( 14, -110 )
+
+[node name="Obelisk 6" parent="." instance=ExtResource( 14 )]
+
+transform/pos = Vector2( -51.095, -68 )
 
 
