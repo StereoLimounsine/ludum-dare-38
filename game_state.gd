@@ -3,7 +3,7 @@ extends Node
 var visit_stack = []
 
 const riddle_stacks = {
-  "Red ruby": [
+  "Green ruby": [
     "Spring Tree 4 KEY", 
     "Summer Tree KEY", 
     "Autumn Tree KEY", 

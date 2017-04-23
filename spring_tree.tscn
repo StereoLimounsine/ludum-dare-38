@@ -54,7 +54,7 @@ transform/scale = Vector2( 1.02267, 1.35571 )
 
 [node name="Message" parent="Area2D"]
 
-text = "Tree 1"
+text = "Spring Tree 1"
 
 
 [editable path="Area2D"]

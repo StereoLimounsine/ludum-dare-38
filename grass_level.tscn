@@ -18,8 +18,8 @@
 [ext_resource path="res://spring_tree3.tscn" type="PackedScene" id=16]
 [ext_resource path="res://pond.tscn" type="PackedScene" id=17]
 [ext_resource path="res://chest.tscn" type="PackedScene" id=18]
-[ext_resource path="res://red_ruby_min.tscn" type="PackedScene" id=19]
-[ext_resource path="res://rock1.tscn" type="PackedScene" id=20]
+[ext_resource path="res://rock1.tscn" type="PackedScene" id=19]
+[ext_resource path="res://green_ruby_min.tscn" type="PackedScene" id=20]
 
 [node name="Node2D" type="Node2D" groups=[
 "Levels",
@@ -166,25 +166,25 @@ transform/pos = Vector2( -31, -79 )
 
 transform/pos = Vector2( 56, -43.3496 )
 
-[node name="Red ruby" parent="." instance=ExtResource( 19 )]
-
-visibility/visible = false
-transform/pos = Vector2( 28.5, -41.5 )
-
 [node name="Rock2" parent="." instance=ExtResource( 12 )]
 
 transform/pos = Vector2( -70, -57 )
 
-[node name="Small Rock 1" parent="." instance=ExtResource( 20 )]
+[node name="Small Rock 1" parent="." instance=ExtResource( 19 )]
 
 transform/pos = Vector2( 29.25, -72.75 )
 
-[node name="Small Rock 2" parent="." instance=ExtResource( 20 )]
+[node name="Small Rock 2" parent="." instance=ExtResource( 19 )]
 
 transform/pos = Vector2( -9.75, -39.75 )
 
-[node name="Small Rock 3" parent="." instance=ExtResource( 20 )]
+[node name="Small Rock 3" parent="." instance=ExtResource( 19 )]
 
 transform/pos = Vector2( -96.75, -77.75 )
+
+[node name="Green ruby" parent="." instance=ExtResource( 20 )]
+
+visibility/visible = false
+transform/pos = Vector2( -39, -52 )
 
 
