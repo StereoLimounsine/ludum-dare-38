@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=1]
+[gd_scene load_steps=4 format=1]
 
 [ext_resource path="res://spring_tree4.png" type="Texture" id=1]
+[ext_resource path="res://interactor.tscn" type="PackedScene" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -43,4 +44,16 @@ shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
 
+[node name="Area2D" parent="." instance=ExtResource( 2 )]
 
+[node name="CollisionShape2D" parent="Area2D"]
+
+transform/pos = Vector2( 0.891913, -2.08144 )
+transform/scale = Vector2( 1.99819, 2.4945 )
+
+[node name="Message" parent="Area2D"]
+
+text = "Tree 4"
+
+
+[editable path="Area2D"]
