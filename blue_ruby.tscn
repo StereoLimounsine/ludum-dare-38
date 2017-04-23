@@ -2,7 +2,7 @@
 
 [ext_resource path="res://sprites/blue_ruby.png" type="Texture" id=1]
 
-[node name="Node2D" type="Node2D"]
+[node name="Blue ruby" type="Node2D"]
 
 z/z = 2
 
