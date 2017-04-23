@@ -1,26 +1,29 @@
-[gd_scene load_steps=20 format=1]
+[gd_scene load_steps=21 format=1]
 
 [ext_resource path="res://tilemap.tres" type="TileSet" id=1]
 [ext_resource path="res://bush2.tscn" type="PackedScene" id=2]
 [ext_resource path="res://statue.tscn" type="PackedScene" id=3]
 [ext_resource path="res://bush1.tscn" type="PackedScene" id=4]
 [ext_resource path="res://mountain.tscn" type="PackedScene" id=5]
-[ext_resource path="res://rock1.tscn" type="PackedScene" id=6]
-[ext_resource path="res://bench.tscn" type="PackedScene" id=7]
-[ext_resource path="res://autumn_tree2.tscn" type="PackedScene" id=8]
-[ext_resource path="res://winter_tree2.tscn" type="PackedScene" id=9]
-[ext_resource path="res://winter_tree1.tscn" type="PackedScene" id=10]
-[ext_resource path="res://autumn_tree1.tscn" type="PackedScene" id=11]
-[ext_resource path="res://summer_tree.tscn" type="PackedScene" id=12]
-[ext_resource path="res://rock2.tscn" type="PackedScene" id=13]
-[ext_resource path="res://spring_tree4.tscn" type="PackedScene" id=14]
-[ext_resource path="res://spring_tree.tscn" type="PackedScene" id=15]
-[ext_resource path="res://spring_tree2.tscn" type="PackedScene" id=16]
-[ext_resource path="res://spring_tree3.tscn" type="PackedScene" id=17]
-[ext_resource path="res://pond.tscn" type="PackedScene" id=18]
-[ext_resource path="res://chest.tscn" type="PackedScene" id=19]
+[ext_resource path="res://bench.tscn" type="PackedScene" id=6]
+[ext_resource path="res://autumn_tree2.tscn" type="PackedScene" id=7]
+[ext_resource path="res://winter_tree2.tscn" type="PackedScene" id=8]
+[ext_resource path="res://winter_tree1.tscn" type="PackedScene" id=9]
+[ext_resource path="res://autumn_tree1.tscn" type="PackedScene" id=10]
+[ext_resource path="res://summer_tree.tscn" type="PackedScene" id=11]
+[ext_resource path="res://rock2.tscn" type="PackedScene" id=12]
+[ext_resource path="res://spring_tree4.tscn" type="PackedScene" id=13]
+[ext_resource path="res://spring_tree.tscn" type="PackedScene" id=14]
+[ext_resource path="res://spring_tree2.tscn" type="PackedScene" id=15]
+[ext_resource path="res://spring_tree3.tscn" type="PackedScene" id=16]
+[ext_resource path="res://pond.tscn" type="PackedScene" id=17]
+[ext_resource path="res://chest.tscn" type="PackedScene" id=18]
+[ext_resource path="res://red_ruby_min.tscn" type="PackedScene" id=19]
+[ext_resource path="res://rock1.tscn" type="PackedScene" id=20]
 
-[node name="Node2D" type="Node2D" groups=[ "Levels" ]]
+[node name="Node2D" type="Node2D" groups=[
+"Levels",
+]]
 
 transform/pos = Vector2( 1, 0 )
 
@@ -66,116 +69,122 @@ transform/pos = Vector2( 51, -112 )
 
 transform/pos = Vector2( 22, -75 )
 
-[node name="Small Rock" parent="." instance=ExtResource( 6 )]
-
-transform/pos = Vector2( 29, -72 )
-
-[node name="Small Rock2" parent="." instance=ExtResource( 6 )]
-
-transform/pos = Vector2( -97, -78 )
-
-[node name="Small Rock1" parent="." instance=ExtResource( 6 )]
-
-transform/pos = Vector2( -9, -40 )
-
-[node name="Bench" parent="." instance=ExtResource( 7 )]
+[node name="Bench" parent="." instance=ExtResource( 6 )]
 
 transform/pos = Vector2( -6, -51 )
 
-[node name="Autumn Tree 1" parent="." instance=ExtResource( 8 )]
+[node name="Autumn Tree 1" parent="." instance=ExtResource( 7 )]
 
 transform/pos = Vector2( -3, -15 )
 
-[node name="Autumn Tree3" parent="." instance=ExtResource( 8 )]
+[node name="Autumn Tree3" parent="." instance=ExtResource( 7 )]
 
 transform/pos = Vector2( 18, -30 )
 
-[node name="Autumn Tree2" parent="." instance=ExtResource( 8 )]
+[node name="Autumn Tree2" parent="." instance=ExtResource( 7 )]
 
 transform/pos = Vector2( 19, -52 )
 
-[node name="Autumn Tree4" parent="." instance=ExtResource( 8 )]
+[node name="Autumn Tree4" parent="." instance=ExtResource( 7 )]
 
 transform/pos = Vector2( 40, -40 )
 
-[node name="Winter Tree 1" parent="." instance=ExtResource( 9 )]
+[node name="Winter Tree 1" parent="." instance=ExtResource( 8 )]
 
 transform/pos = Vector2( -30, -100 )
 
-[node name="Winter Tree2" parent="." instance=ExtResource( 9 )]
+[node name="Winter Tree2" parent="." instance=ExtResource( 8 )]
 
 transform/pos = Vector2( -72, -88 )
 
-[node name="Winter Tree3" parent="." instance=ExtResource( 9 )]
+[node name="Winter Tree3" parent="." instance=ExtResource( 8 )]
 
 transform/pos = Vector2( -24, -117 )
 
-[node name="Winter Tree4" parent="." instance=ExtResource( 9 )]
+[node name="Winter Tree4" parent="." instance=ExtResource( 8 )]
 
 transform/pos = Vector2( -16, -108 )
 
-[node name="Winter Tree5" parent="." instance=ExtResource( 9 )]
+[node name="Winter Tree5" parent="." instance=ExtResource( 8 )]
 
 transform/pos = Vector2( -11, -99 )
 
-[node name="Winter Tree 2" parent="." instance=ExtResource( 10 )]
+[node name="Winter Tree 2 KEY" parent="." instance=ExtResource( 9 )]
 
 transform/pos = Vector2( -52, -87 )
 
-[node name="Autumn Tree KEY" parent="." instance=ExtResource( 11 )]
+[node name="Autumn Tree KEY" parent="." instance=ExtResource( 10 )]
 
-transform/pos = Vector2( -3, -47 )
+transform/pos = Vector2( -3, -45 )
 
-[node name="Summer Tree KEY" parent="." instance=ExtResource( 12 )]
+[node name="Summer Tree KEY" parent="." instance=ExtResource( 11 )]
 
 transform/pos = Vector2( -14, -84 )
 
-[node name="Rock 1" parent="." instance=ExtResource( 13 )]
+[node name="Rock 1" parent="." instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 59, -64 )
 
-[node name="Rock2" parent="." instance=ExtResource( 13 )]
+[node name="Rock 1 2" parent="." instance=ExtResource( 12 )]
 
-transform/pos = Vector2( -75, -59 )
-
-[node name="Rock 1 2" parent="." instance=ExtResource( 13 )]
-
+editor/display_folded = true
 transform/pos = Vector2( -50, -109 )
 
-[node name="Spring Tree 1" parent="." instance=ExtResource( 14 )]
+[node name="Spring Tree 1" parent="." instance=ExtResource( 13 )]
 
 transform/pos = Vector2( -30.3878, -65.5169 )
 
-[node name="Spring Tree 1 2" parent="." instance=ExtResource( 14 )]
+[node name="Spring Tree 1 2" parent="." instance=ExtResource( 13 )]
 
 transform/pos = Vector2( -18.3878, -23.5169 )
 
-[node name="Spring Tree 2" parent="." instance=ExtResource( 15 )]
+[node name="Spring Tree 2" parent="." instance=ExtResource( 14 )]
 
 transform/pos = Vector2( -54.7162, -62.2776 )
 
-[node name="Spring Tree 3" parent="." instance=ExtResource( 15 )]
+[node name="Spring Tree 3" parent="." instance=ExtResource( 14 )]
 
 transform/pos = Vector2( -21.3605, -44.0704 )
 
-[node name="Spring Tree 4 KEY" parent="." instance=ExtResource( 16 )]
+[node name="Spring Tree 4 KEY" parent="." instance=ExtResource( 15 )]
 
 transform/pos = Vector2( -37.1203, -34.4048 )
 
-[node name="Spring Tree 5" parent="." instance=ExtResource( 17 )]
+[node name="Spring Tree 5" parent="." instance=ExtResource( 16 )]
 
 transform/pos = Vector2( -51.7802, -43.8078 )
 
-[node name="Pond" parent="." instance=ExtResource( 18 )]
+[node name="Pond" parent="." instance=ExtResource( 17 )]
 
 transform/pos = Vector2( 9, -75 )
 
-[node name="Chest" parent="." instance=ExtResource( 19 )]
+[node name="Chest" parent="." instance=ExtResource( 18 )]
 
 transform/pos = Vector2( -31, -79 )
 
-[node name="Chest1" parent="." instance=ExtResource( 19 )]
+[node name="Chest1" parent="." instance=ExtResource( 18 )]
 
 transform/pos = Vector2( 56, -43.3496 )
+
+[node name="Red ruby" parent="." instance=ExtResource( 19 )]
+
+visibility/visible = false
+transform/pos = Vector2( 28.5, -41.5 )
+
+[node name="Rock2" parent="." instance=ExtResource( 12 )]
+
+transform/pos = Vector2( -70, -57 )
+
+[node name="Small Rock 1" parent="." instance=ExtResource( 20 )]
+
+transform/pos = Vector2( 29.25, -72.75 )
+
+[node name="Small Rock 2" parent="." instance=ExtResource( 20 )]
+
+transform/pos = Vector2( -9.75, -39.75 )
+
+[node name="Small Rock 3" parent="." instance=ExtResource( 20 )]
+
+transform/pos = Vector2( -96.75, -77.75 )
 
 

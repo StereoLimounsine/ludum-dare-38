@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=1]
+[gd_scene load_steps=9 format=1]
 
 [ext_resource path="res://sprites/mountain.png" type="Texture" id=1]
+[ext_resource path="res://interactor.tscn" type="PackedScene" id=2]
 
 [sub_resource type="SegmentShape2D" id=1]
 
@@ -32,7 +33,13 @@ custom_solver_bias = 0.0
 a = Vector2( -18.6562, 31.7882 )
 b = Vector2( -3.84696, 27.3739 )
 
-[node name="RigidBody2D" type="RigidBody2D"]
+[sub_resource type="SegmentShape2D" id=6]
+
+custom_solver_bias = 0.0
+a = Vector2( 151.45, 239.062 )
+b = Vector2( -319.504, -22.6372 )
+
+[node name="Mountain" type="RigidBody2D"]
 
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
@@ -103,4 +110,15 @@ shape = SubResource( 5 )
 trigger = false
 _update_shape_index = 4
 
+[node name="Area2D" parent="." instance=ExtResource( 2 )]
 
+[node name="CollisionShape2D" parent="Area2D"]
+
+shape = SubResource( 6 )
+
+[node name="Message" parent="Area2D"]
+
+text = "Mountain"
+
+
+[editable path="Area2D"]

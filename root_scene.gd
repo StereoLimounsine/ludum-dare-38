@@ -14,6 +14,9 @@ var loaded_scenes = {}
 var play_video = false
 var exit_scene = load(exit_scene_path).instance()
 
+func get_loaded_scenes():
+	return loaded_scenes
+
 func finish():
 	var timer = get_node("Timer")
 	timer.connect("timeout", self, "show_video")
