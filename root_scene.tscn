@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=1]
+[gd_scene load_steps=7 format=1]
 
 [ext_resource path="res://root_scene.gd" type="Script" id=1]
 [ext_resource path="res://player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://collider.tscn" type="PackedScene" id=3]
 [ext_resource path="res://main_label.gd" type="Script" id=4]
 [ext_resource path="res://inventory.tscn" type="PackedScene" id=5]
+[ext_resource path="res://final_video.ogv" type="VideoStream" id=6]
 
 [node name="Node" type="Node"]
 
@@ -98,6 +99,31 @@ transform/pos = Vector2( -47.5, 34.75 )
 [node name="Purple ruby" parent="Inventory/Rubies"]
 
 transform/pos = Vector2( 47.5, 35 )
+
+[node name="FinalVideo" type="VideoPlayer" parent="."]
+
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -201.0
+margin/top = -166.0
+margin/right = 198.0
+margin/bottom = 62.0
+stream/audio_track = 0
+stream/stream = ExtResource( 6 )
+stream/volume_db = 0.0
+stream/autoplay = false
+stream/paused = false
+expand = true
+
+[node name="Timer" type="Timer" parent="."]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = true
+autostart = false
 
 
 [editable path="Inventory"]

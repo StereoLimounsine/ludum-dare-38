@@ -16,7 +16,6 @@ func clear_label():
 func delayed_clear_label():
 	var timer = get_node("Timer")
 	timer.connect("timeout", self, "clear_label")
-	timer.set_wait_time(3)
 	timer.start()
 
 func _fixed_process(delta):
