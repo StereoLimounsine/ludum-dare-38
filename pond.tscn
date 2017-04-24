@@ -158,13 +158,8 @@ _update_shape_index = 7
 
 [node name="Area2D" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( -7.9108, 7.08948 )
-transform/scale = Vector2( 0.640625, 0.351562 )
-
-[node name="CollisionShape2D" parent="Area2D"]
-
-transform/pos = Vector2( 1.53294, 0.628911 )
-transform/scale = Vector2( 2.82343, 2.3047 )
+transform/pos = Vector2( -8.41079, 4.25916 )
+transform/scale = Vector2( 2.14063, 1.19001 )
 
 [node name="Message" parent="Area2D"]
 

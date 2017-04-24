@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=1]
+[gd_scene load_steps=4 format=1]
 
 [ext_resource path="res://sprites/sand/sand_rock3.png" type="Texture" id=1]
+[ext_resource path="res://interactor.tscn" type="PackedScene" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -44,4 +45,14 @@ shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
 
+[node name="Area2D" parent="." instance=ExtResource( 2 )]
 
+transform/pos = Vector2( -0.813098, 0.3457 )
+transform/scale = Vector2( 0.621094, 0.451172 )
+
+[node name="Message" parent="Area2D"]
+
+text = "Sand Rock 3"
+
+
+[editable path="Area2D"]
