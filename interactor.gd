@@ -20,14 +20,6 @@ func add_to_global_stack():
 	var object = get_parent().get_name()
 	main_scene().get_node("GameState").add_to_stack(object)
 
-func clear_label():
-	label().clear_text(self)
-
-func delayed_clear_label():
-	var timer = get_node("Timer")
-	timer.connect("timeout", self, "clear_label")
-	timer.start()
-
 func _fixed_process(delta):
 	if(current_body):
 		if(Input.is_key_pressed(KEY_SPACE)):
@@ -35,7 +27,6 @@ func _fixed_process(delta):
 		elif(update_label):
 			update_label()
 			add_to_global_stack()
-			delayed_clear_label()
 			update_label = false
 
 func _on_Area2D_body_enter( body ):

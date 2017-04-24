@@ -72,6 +72,13 @@ lines_skipped = 0
 max_lines_visible = -1
 script/script = ExtResource( 4 )
 
+[node name="Timer" type="Timer" parent="Label"]
+
+process_mode = 1
+wait_time = 2.0
+one_shot = true
+autostart = false
+
 [node name="Inventory" parent="." instance=ExtResource( 5 )]
 
 editor/display_folded = true
