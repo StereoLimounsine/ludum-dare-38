@@ -42,79 +42,174 @@ tile_data = IntArray( -1, 1 )
 
 [node name="Carpet" parent="." instance=ExtResource( 2 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -15.1349, -100.542 )
+
+[node name="Message" parent="Carpet/Area2D"]
+
+text = "An old carpet... not of the flying kind"
 
 [node name="SandRock 1" parent="." instance=ExtResource( 3 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -64, -83 )
+
+[node name="Message" parent="SandRock 1/Area2D"]
+
+text = "Just a blank rock"
 
 [node name="SandRock 2 " parent="." instance=ExtResource( 3 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 93, -67 )
+
+[node name="Message" parent="SandRock 2 /Area2D"]
+
+text = "Two lines carved into the rock"
 
 [node name="SandRock 3" parent="." instance=ExtResource( 4 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 29, -68 )
+
+[node name="Message" parent="SandRock 3/Area2D"]
+
+text = "A triangle carved into the rock"
 
 [node name="SandRock 4" parent="." instance=ExtResource( 4 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -5, -12 )
+
+[node name="Message" parent="SandRock 4/Area2D"]
+
+text = "A weirdly shaped rock"
 
 [node name="SandRock 5" parent="." instance=ExtResource( 4 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -71, -52 )
+
+[node name="Message" parent="SandRock 5/Area2D"]
+
+text = "Sun is carved into the rock"
 
 [node name="SandRock 6" parent="." instance=ExtResource( 5 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -21, -70 )
+
+[node name="Message" parent="SandRock 6/Area2D"]
+
+text = "A rocky rock"
 
 [node name="SandRock 7" parent="." instance=ExtResource( 5 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -31, -108 )
+
+[node name="Message" parent="SandRock 7/Area2D"]
+
+text = "A cute rock"
 
 [node name="Fatamorgana" parent="." instance=ExtResource( 6 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 4, -86 )
+
+[node name="Message" parent="Fatamorgana/Area2D"]
+
+text = "A mirage of three pillars appears"
 
 [node name="SandRock 8" parent="." instance=ExtResource( 7 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 1, -118 )
+
+[node name="Message" parent="SandRock 8/Area2D"]
+
+text = "A blank rock"
 
 [node name="SandRock 9" parent="." instance=ExtResource( 7 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 42, -42 )
+
+[node name="Message" parent="SandRock 9/Area2D"]
+
+text = "One line carved into the rock"
 
 [node name="SandRock 10" parent="." instance=ExtResource( 7 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 41, -98 )
+
+[node name="Message" parent="SandRock 10/Area2D"]
+
+text = "Three lines carved into the rock"
 
 [node name="Obelisk1" parent="." instance=ExtResource( 8 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 13, -47 )
+
+[node name="Message" parent="Obelisk1/Area2D"]
+
+text = "Sunrise"
 
 [node name="Obelisk2" parent="." instance=ExtResource( 9 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -93, -74 )
+
+[node name="Message" parent="Obelisk2/Area2D"]
+
+text = "Other Obelisks are mirrored in the shiny surface"
 
 [node name="Obelisk3" parent="." instance=ExtResource( 10 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -45, -98 )
+
+[node name="Message" parent="Obelisk3/Area2D"]
+
+text = "\"Follow the Sun\""
 
 [node name="Pyramid" parent="." instance=ExtResource( 11 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -27.5047, -36.7092 )
+
+[node name="Message" parent="Pyramid/Area2D"]
+
+text = "A pyramid from the beginning of time..."
 
 [node name="Obelisk4" parent="." instance=ExtResource( 12 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 68, -83 )
+
+[node name="Message" parent="Obelisk4/Area2D"]
+
+text = "Noon"
 
 [node name="Obelisk5" parent="." instance=ExtResource( 13 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 14, -111 )
+
+[node name="Message" parent="Obelisk5/Area2D"]
+
+text = "Sunset"
 
 [node name="Obelisk6" parent="." instance=ExtResource( 14 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -50.095, -67 )
+
+[node name="Message" parent="Obelisk6/Area2D"]
+
+text = "A pattern of three points is carved"
 
 [node name="StreamPlayer" type="StreamPlayer" parent="."]
 
@@ -138,3 +233,41 @@ visibility/visible = false
 transform/pos = Vector2( 49, -76 )
 
 
+[editable path="Carpet"]
+[editable path="Carpet/Area2D"]
+[editable path="SandRock 1"]
+[editable path="SandRock 1/Area2D"]
+[editable path="SandRock 2 "]
+[editable path="SandRock 2 /Area2D"]
+[editable path="SandRock 3"]
+[editable path="SandRock 3/Area2D"]
+[editable path="SandRock 4"]
+[editable path="SandRock 4/Area2D"]
+[editable path="SandRock 5"]
+[editable path="SandRock 5/Area2D"]
+[editable path="SandRock 6"]
+[editable path="SandRock 6/Area2D"]
+[editable path="SandRock 7"]
+[editable path="SandRock 7/Area2D"]
+[editable path="Fatamorgana"]
+[editable path="Fatamorgana/Area2D"]
+[editable path="SandRock 8"]
+[editable path="SandRock 8/Area2D"]
+[editable path="SandRock 9"]
+[editable path="SandRock 9/Area2D"]
+[editable path="SandRock 10"]
+[editable path="SandRock 10/Area2D"]
+[editable path="Obelisk1"]
+[editable path="Obelisk1/Area2D"]
+[editable path="Obelisk2"]
+[editable path="Obelisk2/Area2D"]
+[editable path="Obelisk3"]
+[editable path="Obelisk3/Area2D"]
+[editable path="Pyramid"]
+[editable path="Pyramid/Area2D"]
+[editable path="Obelisk4"]
+[editable path="Obelisk4/Area2D"]
+[editable path="Obelisk5"]
+[editable path="Obelisk5/Area2D"]
+[editable path="Obelisk6"]
+[editable path="Obelisk6/Area2D"]
