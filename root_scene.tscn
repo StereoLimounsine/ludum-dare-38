@@ -1,12 +1,13 @@
-[gd_scene load_steps=8 format=1]
+[gd_scene load_steps=9 format=1]
 
 [ext_resource path="res://root_scene.gd" type="Script" id=1]
 [ext_resource path="res://player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://collider.tscn" type="PackedScene" id=3]
-[ext_resource path="res://main_label.gd" type="Script" id=4]
-[ext_resource path="res://inventory.tscn" type="PackedScene" id=5]
-[ext_resource path="res://final_video.ogv" type="VideoStream" id=6]
-[ext_resource path="res://game_state.tscn" type="PackedScene" id=7]
+[ext_resource path="res://orange kid.fnt" type="BitmapFont" id=4]
+[ext_resource path="res://main_label.gd" type="Script" id=5]
+[ext_resource path="res://inventory.tscn" type="PackedScene" id=6]
+[ext_resource path="res://final_video.ogv" type="VideoStream" id=7]
+[ext_resource path="res://game_state.tscn" type="PackedScene" id=8]
 
 [node name="Game" type="Node"]
 
@@ -67,10 +68,11 @@ margin/left = -181.0
 margin/top = -148.0
 margin/right = -82.0
 margin/bottom = -105.0
+custom_fonts/font = ExtResource( 4 )
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-script/script = ExtResource( 4 )
+script/script = ExtResource( 5 )
 
 [node name="Timer" type="Timer" parent="Label"]
 
@@ -79,7 +81,7 @@ wait_time = 2.0
 one_shot = true
 autostart = false
 
-[node name="Inventory" parent="." instance=ExtResource( 5 )]
+[node name="Inventory" parent="." instance=ExtResource( 6 )]
 
 editor/display_folded = true
 transform/pos = Vector2( 8.17569, 62.5011 )
@@ -120,7 +122,7 @@ margin/top = -166.0
 margin/right = 198.0
 margin/bottom = 62.0
 stream/audio_track = 0
-stream/stream = ExtResource( 6 )
+stream/stream = ExtResource( 7 )
 stream/volume_db = 0.0
 stream/autoplay = false
 stream/paused = false
@@ -133,7 +135,7 @@ wait_time = 1.0
 one_shot = true
 autostart = false
 
-[node name="GameState" parent="." instance=ExtResource( 7 )]
+[node name="GameState" parent="." instance=ExtResource( 8 )]
 
 
 [editable path="Inventory"]
