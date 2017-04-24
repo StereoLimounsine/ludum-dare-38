@@ -38,120 +38,260 @@ tile_data = IntArray( -1, 3 )
 
 [node name="SnowTree 1" parent="." instance=ExtResource( 2 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -52.1568, -46.5635 )
+
+[node name="Message" parent="SnowTree 1/Area2D"]
+
+text = "Tree: \"I've seen colder days.\""
 
 [node name="SnowTree 2" parent="." instance=ExtResource( 2 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 14.8432, -72.5635 )
+
+[node name="Message" parent="SnowTree 2/Area2D"]
+
+text = "Tree: \"Why is everybody whining!\""
 
 [node name="SnowTree 3" parent="." instance=ExtResource( 2 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -35.1568, -110.564 )
+
+[node name="Message" parent="SnowTree 3/Area2D"]
+
+text = "Tree: \"It's not that cold!\""
 
 [node name="SnowTree 4" parent="." instance=ExtResource( 2 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -34.1568, -64.5635 )
+
+[node name="Message" parent="SnowTree 4/Area2D"]
+
+text = "Tree: \"How do we even speak?\""
 
 [node name="SnowTree 5" parent="." instance=ExtResource( 2 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -5.15677, -95.5635 )
+
+[node name="Message" parent="SnowTree 5/Area2D"]
+
+text = "Tree: \"I think Snowman knows what he means!\""
 
 [node name="SnowTree 6" parent="." instance=ExtResource( 2 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -0.156769, -130.564 )
+
+[node name="Message" parent="SnowTree 6/Area2D"]
+
+text = "Tree: \"...\""
 
 [node name="SnowTree 7" parent="." instance=ExtResource( 2 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 59.8432, -85.5635 )
+
+[node name="Message" parent="SnowTree 7/Area2D"]
+
+text = "Tree: \"Cold! Always believe in the coooold!\""
 
 [node name="SnowTree 8" parent="." instance=ExtResource( 2 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 12.8432, -20.5635 )
+
+[node name="Message" parent="SnowTree 8/Area2D"]
+
+text = "Tree: \"Snowgirl barely talks these days...maybe it is the Weather that upsets her.\""
 
 [node name="SnowTree 9" parent="." instance=ExtResource( 2 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -71.1568, -91.5635 )
+
+[node name="Message" parent="SnowTree 9/Area2D"]
+
+text = "Tree: \"How should I put it... I... I used to lie to people a lot\""
 
 [node name="SnowTree 10" parent="." instance=ExtResource( 3 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -29.2771, -92.454 )
+
+[node name="Message" parent="SnowTree 10/Area2D"]
+
+text = "Tree: \"Depression!!! Come on, the sun is still shining!\""
 
 [node name="SnowTree 11" parent="." instance=ExtResource( 3 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 53.7229, -99.454 )
+
+[node name="Message" parent="SnowTree 11/Area2D"]
+
+text = "Tree: \"This ice structure is blocking my view.\""
 
 [node name="SnowTree 12" parent="." instance=ExtResource( 3 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 61.7229, -45.454 )
+
+[node name="Message" parent="SnowTree 12/Area2D"]
+
+text = "Tree: \"There's always the sun.\""
 
 [node name="SnowTree 13" parent="." instance=ExtResource( 3 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 36.7229, -73.454 )
+
+[node name="Message" parent="SnowTree 13/Area2D"]
+
+text = "Tree: \"Always, always, always the sun.\""
 
 [node name="SnowTree 14" parent="." instance=ExtResource( 3 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -13.2771, -24.454 )
+
+[node name="Message" parent="SnowTree 14/Area2D"]
+
+text = "Tree: \"I wanna know what love is!\""
 
 [node name="SnowTree 15" parent="." instance=ExtResource( 3 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 50.7229, -63.454 )
+
+[node name="Message" parent="SnowTree 15/Area2D"]
+
+text = "Tree: \"Why would anyone come here and be cold?\""
 
 [node name="SnowTree 16" parent="." instance=ExtResource( 3 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -8.27708, -113.454 )
+
+[node name="Message" parent="SnowTree 16/Area2D"]
+
+text = "Tree: \"This tree next to me is really old... probably dead.\""
 
 [node name="SnowTree 17" parent="." instance=ExtResource( 3 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -53.2771, -91.454 )
+
+[node name="Message" parent="SnowTree 17/Area2D"]
+
+text = "Tree:  \"I feel warm because I am not alone.\""
 
 [node name="SnowTree 18" parent="." instance=ExtResource( 3 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -80.2771, -58.454 )
+
+[node name="Message" parent="SnowTree 18/Area2D"]
+
+text = "Tree: \"Ice Ice Baby!\""
 
 [node name="Ski" parent="." instance=ExtResource( 4 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -33.6914, -42.3306 )
+
+[node name="Message" parent="Ski/Area2D"]
+
+text = "Someone left some ski equipment here..."
 
 [node name="Snowgirl" parent="." instance=ExtResource( 5 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 76.3807, -71.0946 )
+
+[node name="Message" parent="Snowgirl/Area2D"]
+
+text = "Snowgirl: \"Burrrrrr.....I was wondering what might the message be? And where is my Snowman?!\""
 
 [node name="IcedStatue" parent="." instance=ExtResource( 6 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 27.6813, -127.768 )
+
+[node name="Message" parent="IcedStatue/Area2D"]
+
+text = "It's a statue with inscriptions inside. \"Dear Snowgirl...\""
 
 [node name="Snowman" parent="." instance=ExtResource( 7 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -81.2645, -72.5185 )
+
+[node name="Message" parent="Snowman/Area2D"]
+
+text = "Snowman: \"I...I lost my...my...message that I...I wanted to send to my...my dear girl...\""
 
 [node name="Heart" parent="." instance=ExtResource( 8 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -10.7785, -65.2693 )
+
+[node name="Message" parent="Heart/Area2D"]
+
+text = "Metal plate on the heart: \"P.S. I love you!\""
 
 [node name="Hole" parent="." instance=ExtResource( 9 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 22.8334, -43.9002 )
 transform/scale = Vector2( 1.5, 1.5 )
 
+[node name="Message" parent="Hole/Area2D"]
+
+text = "A big hole in the ground...Going who knows where."
+
 [node name="IcePond 1" parent="." instance=ExtResource( 10 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -18.0278, -78.4992 )
+
+[node name="Message" parent="IcePond 1/Area2D"]
+
+text = ""
 
 [node name="IcePond 2" parent="." instance=ExtResource( 10 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -59.3128, -69.4992 )
 transform/rot = 14.0
 transform/scale = Vector2( 2, 2 )
 
+[node name="Message" parent="IcePond 2/Area2D"]
+
+text = ""
+
 [node name="IcePond 3" parent="." instance=ExtResource( 10 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 26.9722, -26.4992 )
+
+[node name="Message" parent="IcePond 3/Area2D"]
+
+text = ""
 
 [node name="IcePond 4" parent="." instance=ExtResource( 10 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 41.7457, -79.7665 )
 transform/rot = 180.0
 transform/scale = Vector2( 1.02417, 1.00835 )
+
+[node name="Message" parent="IcePond 4/Area2D"]
+
+text = ""
 
 [node name="StreamPlayer" type="StreamPlayer" parent="."]
 
@@ -175,3 +315,59 @@ visibility/visible = false
 transform/pos = Vector2( 23, -43 )
 
 
+[editable path="SnowTree 1"]
+[editable path="SnowTree 1/Area2D"]
+[editable path="SnowTree 2"]
+[editable path="SnowTree 2/Area2D"]
+[editable path="SnowTree 3"]
+[editable path="SnowTree 3/Area2D"]
+[editable path="SnowTree 4"]
+[editable path="SnowTree 4/Area2D"]
+[editable path="SnowTree 5"]
+[editable path="SnowTree 5/Area2D"]
+[editable path="SnowTree 6"]
+[editable path="SnowTree 6/Area2D"]
+[editable path="SnowTree 7"]
+[editable path="SnowTree 7/Area2D"]
+[editable path="SnowTree 8"]
+[editable path="SnowTree 8/Area2D"]
+[editable path="SnowTree 9"]
+[editable path="SnowTree 9/Area2D"]
+[editable path="SnowTree 10"]
+[editable path="SnowTree 10/Area2D"]
+[editable path="SnowTree 11"]
+[editable path="SnowTree 11/Area2D"]
+[editable path="SnowTree 12"]
+[editable path="SnowTree 12/Area2D"]
+[editable path="SnowTree 13"]
+[editable path="SnowTree 13/Area2D"]
+[editable path="SnowTree 14"]
+[editable path="SnowTree 14/Area2D"]
+[editable path="SnowTree 15"]
+[editable path="SnowTree 15/Area2D"]
+[editable path="SnowTree 16"]
+[editable path="SnowTree 16/Area2D"]
+[editable path="SnowTree 17"]
+[editable path="SnowTree 17/Area2D"]
+[editable path="SnowTree 18"]
+[editable path="SnowTree 18/Area2D"]
+[editable path="Ski"]
+[editable path="Ski/Area2D"]
+[editable path="Snowgirl"]
+[editable path="Snowgirl/Area2D"]
+[editable path="IcedStatue"]
+[editable path="IcedStatue/Area2D"]
+[editable path="Snowman"]
+[editable path="Snowman/Area2D"]
+[editable path="Heart"]
+[editable path="Heart/Area2D"]
+[editable path="Hole"]
+[editable path="Hole/Area2D"]
+[editable path="IcePond 1"]
+[editable path="IcePond 1/Area2D"]
+[editable path="IcePond 2"]
+[editable path="IcePond 2/Area2D"]
+[editable path="IcePond 3"]
+[editable path="IcePond 3/Area2D"]
+[editable path="IcePond 4"]
+[editable path="IcePond 4/Area2D"]
