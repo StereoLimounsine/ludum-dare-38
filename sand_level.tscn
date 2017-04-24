@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=1]
+[gd_scene load_steps=18 format=1]
 
 [ext_resource path="res://tilemap.tres" type="TileSet" id=1]
 [ext_resource path="res://carpet.tscn" type="PackedScene" id=2]
@@ -15,10 +15,12 @@
 [ext_resource path="res://obelisk5.tscn" type="PackedScene" id=13]
 [ext_resource path="res://obelisk6.tscn" type="PackedScene" id=14]
 [ext_resource path="res://music/sand.ogg" type="AudioStream" id=15]
+[ext_resource path="res://orange_ruby_min.tscn" type="PackedScene" id=16]
+[ext_resource path="res://red_ruby_min.tscn" type="PackedScene" id=17]
 
-[node name="Node2D" type="Node2D" groups=[ "Levels" ]]
-
-transform/pos = Vector2( -1, 0 )
+[node name="Node2D" type="Node2D" groups=[
+"Levels",
+]]
 
 [node name="TileMap" type="TileMap" parent="."]
 
@@ -42,63 +44,59 @@ tile_data = IntArray( -1, 1 )
 
 transform/pos = Vector2( -15.1349, -100.542 )
 
-[node name="Sand Rock 1" parent="." instance=ExtResource( 3 )]
+[node name="SandRock 1" parent="." instance=ExtResource( 3 )]
 
 transform/pos = Vector2( -64, -83 )
 
-[node name="Sand Rock2" parent="." instance=ExtResource( 3 )]
+[node name="SandRock 2 " parent="." instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 93, -67 )
 
-[node name="Sand Rock 2" parent="." instance=ExtResource( 4 )]
+[node name="SandRock 3" parent="." instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 29, -68 )
 
-[node name="Sand Rock3" parent="." instance=ExtResource( 4 )]
+[node name="SandRock 4" parent="." instance=ExtResource( 4 )]
 
 transform/pos = Vector2( -5, -12 )
 
-[node name="Sand Rock6" parent="." instance=ExtResource( 4 )]
+[node name="SandRock 5" parent="." instance=ExtResource( 4 )]
 
 transform/pos = Vector2( -71, -52 )
 
-[node name="Sand Rock 3" parent="." instance=ExtResource( 5 )]
+[node name="SandRock 6" parent="." instance=ExtResource( 5 )]
 
 transform/pos = Vector2( -21, -70 )
 
-[node name="Sand Rock4" parent="." instance=ExtResource( 5 )]
+[node name="SandRock 7" parent="." instance=ExtResource( 5 )]
 
 transform/pos = Vector2( -31, -108 )
 
-[node name="RigidBody2D" parent="." instance=ExtResource( 6 )]
+[node name="Fatamorgana" parent="." instance=ExtResource( 6 )]
 
 transform/pos = Vector2( 4, -86 )
 
-[node name="Sand Rock 4" parent="." instance=ExtResource( 7 )]
+[node name="SandRock 8" parent="." instance=ExtResource( 7 )]
 
 transform/pos = Vector2( 1, -118 )
 
-[node name="Sand Rock5" parent="." instance=ExtResource( 7 )]
+[node name="SandRock 9" parent="." instance=ExtResource( 7 )]
 
 transform/pos = Vector2( 42, -42 )
 
-[node name="Sand Rock7" parent="." instance=ExtResource( 7 )]
+[node name="SandRock 10" parent="." instance=ExtResource( 7 )]
 
 transform/pos = Vector2( 41, -98 )
 
-[node name="Obelisk 1" parent="." instance=ExtResource( 8 )]
+[node name="Obelisk1" parent="." instance=ExtResource( 8 )]
 
 transform/pos = Vector2( 13, -47 )
 
-[node name="Obelisk2" parent="." instance=ExtResource( 8 )]
-
-transform/pos = Vector2( 13, -47 )
-
-[node name="Obelisk 2" parent="." instance=ExtResource( 9 )]
+[node name="Obelisk2" parent="." instance=ExtResource( 9 )]
 
 transform/pos = Vector2( -93, -74 )
 
-[node name="Obelisk 3" parent="." instance=ExtResource( 10 )]
+[node name="Obelisk3" parent="." instance=ExtResource( 10 )]
 
 transform/pos = Vector2( -45, -98 )
 
@@ -106,15 +104,15 @@ transform/pos = Vector2( -45, -98 )
 
 transform/pos = Vector2( -27.5047, -36.7092 )
 
-[node name="Obelisk 4" parent="." instance=ExtResource( 12 )]
+[node name="Obelisk4" parent="." instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 68, -83 )
 
-[node name="Obelisk 5" parent="." instance=ExtResource( 13 )]
+[node name="Obelisk5" parent="." instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 14, -111 )
 
-[node name="Obelisk 6" parent="." instance=ExtResource( 14 )]
+[node name="Obelisk6" parent="." instance=ExtResource( 14 )]
 
 transform/pos = Vector2( -50.095, -67 )
 
@@ -128,5 +126,15 @@ stream/autoplay = true
 stream/paused = false
 stream/loop_restart_time = 0.0
 stream/buffering_ms = 500
+
+[node name="OrangeRuby" parent="." instance=ExtResource( 16 )]
+
+visibility/visible = false
+transform/pos = Vector2( -10, -113 )
+
+[node name="RedRuby" parent="." instance=ExtResource( 17 )]
+
+visibility/visible = false
+transform/pos = Vector2( 49, -76 )
 
 
