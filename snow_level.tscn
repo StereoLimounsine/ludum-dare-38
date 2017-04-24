@@ -11,7 +11,9 @@
 [ext_resource path="res://hole.tscn" type="PackedScene" id=9]
 [ext_resource path="res://ice_pond.tscn" type="PackedScene" id=10]
 
-[node name="Node2D" type="Node2D" groups=[ "Levels" ]]
+[node name="Node2D" type="Node2D" groups=[
+"Levels",
+]]
 
 [node name="TileMap" type="TileMap" parent="."]
 
@@ -45,7 +47,7 @@ transform/pos = Vector2( -35.1568, -110.564 )
 
 [node name="Snow Tree8" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( -38.1568, -64.5635 )
+transform/pos = Vector2( -34.1568, -64.5635 )
 
 [node name="Snow Tree9" parent="." instance=ExtResource( 2 )]
 
@@ -53,11 +55,11 @@ transform/pos = Vector2( -5.15677, -95.5635 )
 
 [node name="Snow Tree14" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( -0.156769, -128.564 )
+transform/pos = Vector2( -0.156769, -130.564 )
 
 [node name="Snow Tree10" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 59.8432, -86.5635 )
+transform/pos = Vector2( 59.8432, -85.5635 )
 
 [node name="Snow Tree11" parent="." instance=ExtResource( 2 )]
 
@@ -65,7 +67,7 @@ transform/pos = Vector2( 12.8432, -20.5635 )
 
 [node name="Snow Tree13" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( -71.1568, -90.5635 )
+transform/pos = Vector2( -71.1568, -91.5635 )
 
 [node name="Snow Tree 2" parent="." instance=ExtResource( 3 )]
 
@@ -73,7 +75,7 @@ transform/pos = Vector2( -29.2771, -92.454 )
 
 [node name="Snow Tree16" parent="." instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 51.7229, -99.454 )
+transform/pos = Vector2( 53.7229, -99.454 )
 
 [node name="Snow Tree17" parent="." instance=ExtResource( 3 )]
 
@@ -81,7 +83,7 @@ transform/pos = Vector2( 61.7229, -45.454 )
 
 [node name="Snow Tree12" parent="." instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 38.7229, -77.454 )
+transform/pos = Vector2( 36.7229, -73.454 )
 
 [node name="Snow Tree3" parent="." instance=ExtResource( 3 )]
 
@@ -89,7 +91,7 @@ transform/pos = Vector2( -13.2771, -24.454 )
 
 [node name="Snow Tree4" parent="." instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 48.7229, -59.454 )
+transform/pos = Vector2( 50.7229, -63.454 )
 
 [node name="Snow Tree5" parent="." instance=ExtResource( 3 )]
 
@@ -101,7 +103,7 @@ transform/pos = Vector2( -53.2771, -91.454 )
 
 [node name="Snow Tree7" parent="." instance=ExtResource( 3 )]
 
-transform/pos = Vector2( -80.2771, -60.454 )
+transform/pos = Vector2( -80.2771, -58.454 )
 
 [node name="Ski" parent="." instance=ExtResource( 4 )]
 
@@ -117,11 +119,11 @@ transform/pos = Vector2( 27.6813, -127.768 )
 
 [node name="Snowman" parent="." instance=ExtResource( 7 )]
 
-transform/pos = Vector2( -77.2645, -72.5185 )
+transform/pos = Vector2( -81.2645, -72.5185 )
 
 [node name="Heart" parent="." instance=ExtResource( 8 )]
 
-transform/pos = Vector2( -6.77851, -61.2693 )
+transform/pos = Vector2( -10.7785, -65.2693 )
 
 [node name="Hole" parent="." instance=ExtResource( 9 )]
 
@@ -144,7 +146,8 @@ transform/pos = Vector2( 26.9722, -26.4992 )
 
 [node name="Ice Pond2" parent="." instance=ExtResource( 10 )]
 
-transform/pos = Vector2( 40.9722, -83.4992 )
+transform/pos = Vector2( 41.7457, -79.7665 )
 transform/rot = 180.0
+transform/scale = Vector2( 1.02417, 1.00835 )
 
 
