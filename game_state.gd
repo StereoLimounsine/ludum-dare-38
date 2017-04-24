@@ -3,11 +3,22 @@ extends Node
 var visit_stack = []
 
 const riddle_stacks = {
-  "Green ruby": [
-    "Spring Tree 4 KEY", 
-    "Summer Tree KEY", 
-    "Autumn Tree KEY", 
-    "Winter Tree 2 KEY"
+  ["GreenRuby", "YellowRuby"]: [
+    "SpringTree", 
+    "SummerTree", 
+    "AutumnTree", 
+    "WinterTree"
+  ],
+  ["OrangeRuby", "RedRuby"]: [
+    "Obelisk1",
+    "Obelisk4",
+    "Obelisk5"
+  ],
+  ["BlueRuby", "PurpleRuby"]: [
+    "Snowman",
+    "IcedStatue",
+    "Heart",
+    "Snowgirl"
   ]
 }
 
@@ -35,10 +46,12 @@ func check_riddles():
 		var riddle = riddle_stacks[riddle_key]
 		var last_n = last_n(visit_stack, riddle.size())
 		if last_n == riddle:
-			get_ruby(riddle_key).show()
+			for ruby in riddle_key:
+				get_ruby(ruby).show()
 
 func add_to_stack(object):
-	visit_stack.push_back(object)
+	var name = object.split(" ")[0]
+	visit_stack.push_back(name)
 	check_riddles()
 
 func _ready():

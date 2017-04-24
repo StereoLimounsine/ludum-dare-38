@@ -19,32 +19,32 @@ texture = ExtResource( 2 )
 
 [node name="Rubies" type="Node" parent="."]
 
-[node name="Green ruby" parent="Rubies" instance=ExtResource( 3 )]
+[node name="GreenRuby" parent="Rubies" instance=ExtResource( 3 )]
 
 visibility/visible = false
 transform/pos = Vector2( 1.25, -27 )
 
-[node name="Yellow ruby" parent="Rubies" instance=ExtResource( 4 )]
+[node name="YellowRuby" parent="Rubies" instance=ExtResource( 4 )]
 
 visibility/visible = false
 transform/pos = Vector2( -18, -27.25 )
 
-[node name="Orange ruby" parent="Rubies" instance=ExtResource( 5 )]
+[node name="OrangeRuby" parent="Rubies" instance=ExtResource( 5 )]
 
 visibility/visible = false
 transform/pos = Vector2( -36.5, -27.5 )
 
-[node name="Blue ruby" parent="Rubies" instance=ExtResource( 6 )]
+[node name="BlueRuby" parent="Rubies" instance=ExtResource( 6 )]
 
 visibility/visible = false
 transform/pos = Vector2( 20.25, -27 )
 
-[node name="Red ruby" parent="Rubies" instance=ExtResource( 7 )]
+[node name="RedRuby" parent="Rubies" instance=ExtResource( 7 )]
 
 visibility/visible = false
 transform/pos = Vector2( -55.5, -27.25 )
 
-[node name="Purple ruby" parent="Rubies" instance=ExtResource( 8 )]
+[node name="PurpleRuby" parent="Rubies" instance=ExtResource( 8 )]
 
 visibility/visible = false
 transform/pos = Vector2( 39.5, -27 )

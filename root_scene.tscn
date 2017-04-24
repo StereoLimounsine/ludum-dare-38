@@ -83,30 +83,29 @@ autostart = false
 
 [node name="Inventory" parent="." instance=ExtResource( 6 )]
 
-editor/display_folded = true
 transform/pos = Vector2( 8.17569, 62.5011 )
 
-[node name="Green ruby" parent="Inventory/Rubies"]
+[node name="GreenRuby" parent="Inventory/Rubies"]
 
 transform/pos = Vector2( 9.25, 35 )
 
-[node name="Yellow ruby" parent="Inventory/Rubies"]
+[node name="YellowRuby" parent="Inventory/Rubies"]
 
 transform/pos = Vector2( -10, 34.75 )
 
-[node name="Orange ruby" parent="Inventory/Rubies"]
+[node name="OrangeRuby" parent="Inventory/Rubies"]
 
 transform/pos = Vector2( -28.5, 34.5 )
 
-[node name="Blue ruby" parent="Inventory/Rubies"]
+[node name="BlueRuby" parent="Inventory/Rubies"]
 
 transform/pos = Vector2( 28.25, 35 )
 
-[node name="Red ruby" parent="Inventory/Rubies"]
+[node name="RedRuby" parent="Inventory/Rubies"]
 
 transform/pos = Vector2( -47.5, 34.75 )
 
-[node name="Purple ruby" parent="Inventory/Rubies"]
+[node name="PurpleRuby" parent="Inventory/Rubies"]
 
 transform/pos = Vector2( 47.5, 35 )
 

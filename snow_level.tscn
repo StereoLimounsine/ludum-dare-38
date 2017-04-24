@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=1]
+[gd_scene load_steps=14 format=1]
 
 [ext_resource path="res://tilemap.tres" type="TileSet" id=1]
 [ext_resource path="res://snow_tree1.tscn" type="PackedScene" id=2]
@@ -11,8 +11,12 @@
 [ext_resource path="res://hole.tscn" type="PackedScene" id=9]
 [ext_resource path="res://ice_pond.tscn" type="PackedScene" id=10]
 [ext_resource path="res://music/snow.ogg" type="AudioStream" id=11]
+[ext_resource path="res://blue_ruby_min.tscn" type="PackedScene" id=12]
+[ext_resource path="res://purple_ruby_min.tscn" type="PackedScene" id=13]
 
-[node name="Node2D" type="Node2D" groups=[ "Levels" ]]
+[node name="Node2D" type="Node2D" groups=[
+"Levels",
+]]
 
 [node name="TileMap" type="TileMap" parent="."]
 
@@ -32,75 +36,75 @@ collision/mask = 1
 occluder/light_mask = 1
 tile_data = IntArray( -1, 3 )
 
-[node name="Snow Tree 1" parent="." instance=ExtResource( 2 )]
+[node name="SnowTree 1" parent="." instance=ExtResource( 2 )]
 
 transform/pos = Vector2( -52.1568, -46.5635 )
 
-[node name="Snow Tree2" parent="." instance=ExtResource( 2 )]
+[node name="SnowTree 2" parent="." instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 14.8432, -72.5635 )
 
-[node name="Snow Tree15" parent="." instance=ExtResource( 2 )]
+[node name="SnowTree 3" parent="." instance=ExtResource( 2 )]
 
 transform/pos = Vector2( -35.1568, -110.564 )
 
-[node name="Snow Tree8" parent="." instance=ExtResource( 2 )]
+[node name="SnowTree 4" parent="." instance=ExtResource( 2 )]
 
 transform/pos = Vector2( -34.1568, -64.5635 )
 
-[node name="Snow Tree9" parent="." instance=ExtResource( 2 )]
+[node name="SnowTree 5" parent="." instance=ExtResource( 2 )]
 
 transform/pos = Vector2( -5.15677, -95.5635 )
 
-[node name="Snow Tree14" parent="." instance=ExtResource( 2 )]
+[node name="SnowTree 6" parent="." instance=ExtResource( 2 )]
 
 transform/pos = Vector2( -0.156769, -130.564 )
 
-[node name="Snow Tree10" parent="." instance=ExtResource( 2 )]
+[node name="SnowTree 7" parent="." instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 59.8432, -85.5635 )
 
-[node name="Snow Tree11" parent="." instance=ExtResource( 2 )]
+[node name="SnowTree 8" parent="." instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 12.8432, -20.5635 )
 
-[node name="Snow Tree13" parent="." instance=ExtResource( 2 )]
+[node name="SnowTree 9" parent="." instance=ExtResource( 2 )]
 
 transform/pos = Vector2( -71.1568, -91.5635 )
 
-[node name="Snow Tree 2" parent="." instance=ExtResource( 3 )]
+[node name="SnowTree 10" parent="." instance=ExtResource( 3 )]
 
 transform/pos = Vector2( -29.2771, -92.454 )
 
-[node name="Snow Tree16" parent="." instance=ExtResource( 3 )]
+[node name="SnowTree 11" parent="." instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 53.7229, -99.454 )
 
-[node name="Snow Tree17" parent="." instance=ExtResource( 3 )]
+[node name="SnowTree 12" parent="." instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 61.7229, -45.454 )
 
-[node name="Snow Tree12" parent="." instance=ExtResource( 3 )]
+[node name="SnowTree 13" parent="." instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 36.7229, -73.454 )
 
-[node name="Snow Tree3" parent="." instance=ExtResource( 3 )]
+[node name="SnowTree 14" parent="." instance=ExtResource( 3 )]
 
 transform/pos = Vector2( -13.2771, -24.454 )
 
-[node name="Snow Tree4" parent="." instance=ExtResource( 3 )]
+[node name="SnowTree 15" parent="." instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 50.7229, -63.454 )
 
-[node name="Snow Tree5" parent="." instance=ExtResource( 3 )]
+[node name="SnowTree 16" parent="." instance=ExtResource( 3 )]
 
 transform/pos = Vector2( -8.27708, -113.454 )
 
-[node name="Snow Tree6" parent="." instance=ExtResource( 3 )]
+[node name="SnowTree 17" parent="." instance=ExtResource( 3 )]
 
 transform/pos = Vector2( -53.2771, -91.454 )
 
-[node name="Snow Tree7" parent="." instance=ExtResource( 3 )]
+[node name="SnowTree 18" parent="." instance=ExtResource( 3 )]
 
 transform/pos = Vector2( -80.2771, -58.454 )
 
@@ -112,7 +116,7 @@ transform/pos = Vector2( -33.6914, -42.3306 )
 
 transform/pos = Vector2( 76.3807, -71.0946 )
 
-[node name="Iced Statue" parent="." instance=ExtResource( 6 )]
+[node name="IcedStatue" parent="." instance=ExtResource( 6 )]
 
 transform/pos = Vector2( 27.6813, -127.768 )
 
@@ -129,21 +133,21 @@ transform/pos = Vector2( -10.7785, -65.2693 )
 transform/pos = Vector2( 22.8334, -43.9002 )
 transform/scale = Vector2( 1.5, 1.5 )
 
-[node name="Ice Pond" parent="." instance=ExtResource( 10 )]
+[node name="IcePond 1" parent="." instance=ExtResource( 10 )]
 
 transform/pos = Vector2( -18.0278, -78.4992 )
 
-[node name="Ice Pond3" parent="." instance=ExtResource( 10 )]
+[node name="IcePond 2" parent="." instance=ExtResource( 10 )]
 
 transform/pos = Vector2( -59.3128, -69.4992 )
 transform/rot = 14.0
 transform/scale = Vector2( 2, 2 )
 
-[node name="Ice Pond1" parent="." instance=ExtResource( 10 )]
+[node name="IcePond 3" parent="." instance=ExtResource( 10 )]
 
 transform/pos = Vector2( 26.9722, -26.4992 )
 
-[node name="Ice Pond2" parent="." instance=ExtResource( 10 )]
+[node name="IcePond 4" parent="." instance=ExtResource( 10 )]
 
 transform/pos = Vector2( 41.7457, -79.7665 )
 transform/rot = 180.0
@@ -159,5 +163,15 @@ stream/autoplay = true
 stream/paused = false
 stream/loop_restart_time = 0.0
 stream/buffering_ms = 500
+
+[node name="BlueRuby" parent="." instance=ExtResource( 12 )]
+
+visibility/visible = false
+transform/pos = Vector2( -35, -76 )
+
+[node name="PurpleRuby" parent="." instance=ExtResource( 13 )]
+
+visibility/visible = false
+transform/pos = Vector2( -55, -62 )
 
 
