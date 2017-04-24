@@ -23,6 +23,10 @@ func finish():
 	timer.start()
 
 func show_video():
+	for child in get_children():
+		if child.is_in_group("Levels"):
+			child.queue_free()
+			break
 	hide_children(self)
 	var video = get_node("FinalVideo")
 	video.show()
