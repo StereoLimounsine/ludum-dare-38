@@ -47,141 +47,309 @@ tile_data = IntArray( -1048578, 1073741824, -1, 1073741824 )
 
 [node name="Bush 1" parent="." instance=ExtResource( 2 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -11, -53 )
+
+[node name="Message" parent="Bush 1/Area2D"]
+
+text = "Bush: \"No I am not George W. Bush!\""
 
 [node name="Bush 2" parent="." instance=ExtResource( 2 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -72, -58 )
+
+[node name="Message" parent="Bush 2/Area2D"]
+
+text = "I am pretty sure this bush isn't unique..."
 
 [node name="Statue" parent="." instance=ExtResource( 3 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -9, -101 )
+
+[node name="Message" parent="Statue/Area2D"]
+
+text = "Statue of Seasons with inscriptions: \"Every season brings new changes in life.\""
 
 [node name="Bush 3" parent="." instance=ExtResource( 4 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -61.4045, -72.2685 )
 transform/scale = Vector2( 1.01264, 1.00839 )
+
+[node name="Message" parent="Bush 3/Area2D"]
+
+text = "Bush: \"I have currants on me!\""
 
 [node name="Mountain" parent="." instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 51, -112 )
 
+[node name="Message" parent="Mountain/Area2D"]
+
+text = "\"I can see a man holding a red flag on the top of this mountain...\""
+
 [node name="Bush 4" parent="." instance=ExtResource( 4 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 25, -64 )
+
+[node name="Message" parent="Bush 4/Area2D"]
+
+text = "Bush: \"Oh my... oh my...\""
 
 [node name="Bench" parent="." instance=ExtResource( 6 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -6, -51 )
+
+[node name="Message" parent="Bench/Area2D"]
+
+text = "Bench with the paper on it: \"Once there was a man who changed the world by pressing J or K on the keyboard.\""
 
 [node name="AutumnTree 1" parent="." instance=ExtResource( 7 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -3, -15 )
+
+[node name="Message" parent="AutumnTree 1/Area2D"]
+
+text = "Autumn tree: \"Summer was really hot!\""
 
 [node name="AutumnTree 3" parent="." instance=ExtResource( 7 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 18, -30 )
+
+[node name="Message" parent="AutumnTree 3/Area2D"]
+
+text = "Autumn tree: \"My leaves are falling\""
 
 [node name="AutumnTree 2" parent="." instance=ExtResource( 7 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 19, -52 )
+
+[node name="Message" parent="AutumnTree 2/Area2D"]
+
+text = "Autumn tree: \"I hate rocks!\""
 
 [node name="AutumnTree 4" parent="." instance=ExtResource( 7 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 40, -40 )
+
+[node name="Message" parent="AutumnTree 4/Area2D"]
+
+text = "Autumn tree: \"I don't hate anyone!\""
 
 [node name="WinterTree 1" parent="." instance=ExtResource( 8 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -30, -100 )
+
+[node name="Message" parent="WinterTree 1/Area2D"]
+
+text = "Christmas tree: \"It sure is hot here!\""
 
 [node name="WinterTree 2" parent="." instance=ExtResource( 8 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -72, -88 )
+
+[node name="Message" parent="WinterTree 2/Area2D"]
+
+text = "Christmas tree: \"I don't have any of lights on me.\""
 
 [node name="WinterTree 3" parent="." instance=ExtResource( 8 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -26, -117 )
+
+[node name="Message" parent="WinterTree 3/Area2D"]
+
+text = "Christmas tree: \"Yup... No light decoration.\""
 
 [node name="WinterTree 4" parent="." instance=ExtResource( 8 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -16, -114 )
+
+[node name="Message" parent="WinterTree 4/Area2D"]
+
+text = "Christmas tree: \"Last Christmas I gave you my heart!\""
 
 [node name="WinterTree 5" parent="." instance=ExtResource( 8 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -11, -99 )
+
+[node name="Message" parent="WinterTree 5/Area2D"]
+
+text = "Christmas tree: \"I heard that they will cut me once the Winter is here!\""
 
 [node name="WinterTree 6" parent="." instance=ExtResource( 9 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -52, -87 )
+
+[node name="Message" parent="WinterTree 6/Area2D"]
+
+text = "Christmas tree: \"Stop! Don't you hurt me!\""
 
 [node name="AutumnTree" parent="." instance=ExtResource( 10 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -3, -45 )
+
+[node name="Message" parent="AutumnTree/Area2D"]
+
+text = "Autumn tree: \"Words don't come easy!\""
 
 [node name="SummerTree" parent="." instance=ExtResource( 11 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -18, -84 )
+
+[node name="Message" parent="SummerTree/Area2D"]
+
+text = "Summer tree: \"Mmmm... I like my fruits\""
 
 [node name="Rock 1" parent="." instance=ExtResource( 12 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 61, -63 )
+
+[node name="Message" parent="Rock 1/Area2D"]
+
+text = "Rock: \"Rock me! Rock me!\""
 
 [node name="Rock 2" parent="." instance=ExtResource( 12 )]
 
 editor/display_folded = true
 transform/pos = Vector2( -50, -109 )
 
+[node name="Message" parent="Rock 2/Area2D"]
+
+text = "Rock: \"Owls are not what they seem!\""
+
 [node name="SpringTree 1" parent="." instance=ExtResource( 13 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -30.3878, -65.5169 )
+
+[node name="Message" parent="SpringTree 1/Area2D"]
+
+text = "Spring tree: \"Summer time sadness!\""
 
 [node name="SpringTree 2" parent="." instance=ExtResource( 13 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -18.3878, -23.5169 )
+
+[node name="Message" parent="SpringTree 2/Area2D"]
+
+text = "Spring tree:  \"I see trees of green!\""
 
 [node name="SpringTree 3" parent="." instance=ExtResource( 14 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -54.7162, -62.2776 )
+
+[node name="Message" parent="SpringTree 3/Area2D"]
+
+text = "Spring tree: \"...what a wonderful world.\""
 
 [node name="SpringTree 4" parent="." instance=ExtResource( 14 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -21.3605, -44.0704 )
+
+[node name="Message" parent="SpringTree 4/Area2D"]
+
+text = "Spring tree: \"Red roses too!\""
 
 [node name="SpringTree 5" parent="." instance=ExtResource( 15 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -37.1203, -34.4048 )
+
+[node name="Message" parent="SpringTree 5/Area2D"]
+
+text = "Spring tree: \"I see them bloom for me and you!\""
 
 [node name="SpringTree 6" parent="." instance=ExtResource( 16 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -51.7802, -43.8078 )
+
+[node name="Message" parent="SpringTree 6/Area2D"]
+
+text = "Spring tree: \"And I think to myself...\""
 
 [node name="Pond" parent="." instance=ExtResource( 17 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 9, -75 )
+
+[node name="Message" parent="Pond/Area2D"]
+
+text = "A small pond with water lilies"
 
 [node name="Chest 1" parent="." instance=ExtResource( 18 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -31, -79 )
+
+[node name="Message" parent="Chest 1/Area2D"]
+
+text = "Chest: \"You must touch each of the season trees...\""
 
 [node name="Chest 2" parent="." instance=ExtResource( 18 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 56, -43.3496 )
+
+[node name="Message" parent="Chest 2/Area2D"]
+
+text = "Chest: \"Nothing inside.\""
 
 [node name="Rock 3" parent="." instance=ExtResource( 12 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -70, -57 )
+
+[node name="Message" parent="Rock 3/Area2D"]
+
+text = "Rock: \"Who said that?\""
 
 [node name="SmallRock 1" parent="." instance=ExtResource( 19 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 29.25, -72.75 )
+
+[node name="Message" parent="SmallRock 1/Area2D"]
+
+text = "Rock: \"I fell from the mountain.\""
 
 [node name="SmallRock 2" parent="." instance=ExtResource( 19 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -9.75, -39.75 )
+
+[node name="Message" parent="SmallRock 2/Area2D"]
+
+text = "Just an ordinary rock."
 
 [node name="SmallRock 3" parent="." instance=ExtResource( 19 )]
 
+editor/display_folded = true
 transform/pos = Vector2( -96.75, -77.75 )
+
+[node name="Message" parent="SmallRock 3/Area2D"]
+
+text = "Rock: \"Is anybody here?!\""
 
 [node name="GreenRuby" parent="." instance=ExtResource( 20 )]
 
@@ -205,3 +373,71 @@ visibility/visible = false
 transform/pos = Vector2( -21, -92.9634 )
 
 
+[editable path="Bush 1"]
+[editable path="Bush 1/Area2D"]
+[editable path="Bush 2"]
+[editable path="Bush 2/Area2D"]
+[editable path="Statue"]
+[editable path="Statue/Area2D"]
+[editable path="Bush 3"]
+[editable path="Bush 3/Area2D"]
+[editable path="Mountain"]
+[editable path="Mountain/Area2D"]
+[editable path="Bush 4"]
+[editable path="Bush 4/Area2D"]
+[editable path="Bench"]
+[editable path="Bench/Area2D"]
+[editable path="AutumnTree 1"]
+[editable path="AutumnTree 1/Area2D"]
+[editable path="AutumnTree 3"]
+[editable path="AutumnTree 3/Area2D"]
+[editable path="AutumnTree 2"]
+[editable path="AutumnTree 2/Area2D"]
+[editable path="AutumnTree 4"]
+[editable path="AutumnTree 4/Area2D"]
+[editable path="WinterTree 1"]
+[editable path="WinterTree 1/Area2D"]
+[editable path="WinterTree 2"]
+[editable path="WinterTree 2/Area2D"]
+[editable path="WinterTree 3"]
+[editable path="WinterTree 3/Area2D"]
+[editable path="WinterTree 4"]
+[editable path="WinterTree 4/Area2D"]
+[editable path="WinterTree 5"]
+[editable path="WinterTree 5/Area2D"]
+[editable path="WinterTree 6"]
+[editable path="WinterTree 6/Area2D"]
+[editable path="AutumnTree"]
+[editable path="AutumnTree/Area2D"]
+[editable path="SummerTree"]
+[editable path="SummerTree/Area2D"]
+[editable path="Rock 1"]
+[editable path="Rock 1/Area2D"]
+[editable path="Rock 2"]
+[editable path="Rock 2/Area2D"]
+[editable path="SpringTree 1"]
+[editable path="SpringTree 1/Area2D"]
+[editable path="SpringTree 2"]
+[editable path="SpringTree 2/Area2D"]
+[editable path="SpringTree 3"]
+[editable path="SpringTree 3/Area2D"]
+[editable path="SpringTree 4"]
+[editable path="SpringTree 4/Area2D"]
+[editable path="SpringTree 5"]
+[editable path="SpringTree 5/Area2D"]
+[editable path="SpringTree 6"]
+[editable path="SpringTree 6/Area2D"]
+[editable path="Pond"]
+[editable path="Pond/Area2D"]
+[editable path="Chest 1"]
+[editable path="Chest 1/Area2D"]
+[editable path="Chest 2"]
+[editable path="Chest 2/Area2D"]
+[editable path="Rock 3"]
+[editable path="Rock 3/Area2D"]
+[editable path="SmallRock 1"]
+[editable path="SmallRock 1/Area2D"]
+[editable path="SmallRock 2"]
+[editable path="SmallRock 2/Area2D"]
+[editable path="SmallRock 3"]
+[editable path="SmallRock 3/Area2D"]

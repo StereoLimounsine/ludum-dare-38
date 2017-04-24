@@ -150,6 +150,7 @@ text = "Three lines carved into the rock"
 
 [node name="Obelisk1" parent="." instance=ExtResource( 8 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 13, -47 )
 
 [node name="Message" parent="Obelisk1/Area2D"]
@@ -208,7 +209,7 @@ transform/pos = Vector2( -50.095, -67 )
 
 [node name="Message" parent="Obelisk6/Area2D"]
 
-text = "A pattern of three points is shown"
+text = "A pattern of three points is carved"
 
 [node name="StreamPlayer" type="StreamPlayer" parent="."]
 
