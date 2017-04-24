@@ -1,12 +1,12 @@
 extends Node
 
 var scene_loaded = false
-var current_index = 2
+var current_index = 1
 var scene = null
 const scene_paths = [
-  "grave_level.tscn", "sand_level.tscn",
-  "grass_level.tscn", "concrete_level.tscn",
-  "snow_level.tscn", "water_level.tscn"
+  "sand_level.tscn",
+  "grass_level.tscn",
+  "snow_level.tscn"
 ]
 const exit_scene_path = "exit_base.tscn"
 var exit_state = false
