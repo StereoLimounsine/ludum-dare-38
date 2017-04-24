@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=1]
+[gd_scene load_steps=8 format=1]
 
 [ext_resource path="res://sprites/sand/fatamorgana.png" type="Texture" id=1]
+[ext_resource path="res://interactor.tscn" type="PackedScene" id=2]
 
 [sub_resource type="SegmentShape2D" id=1]
 
@@ -105,4 +106,14 @@ shape = SubResource( 5 )
 trigger = false
 _update_shape_index = 4
 
+[node name="Area2D" parent="." instance=ExtResource( 2 )]
 
+transform/pos = Vector2( -3.19556, -0.901024 )
+transform/scale = Vector2( 2.6875, 1.32688 )
+
+[node name="Message" parent="Area2D"]
+
+text = "Fatamorgana"
+
+
+[editable path="Area2D"]

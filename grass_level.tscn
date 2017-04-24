@@ -47,7 +47,7 @@ tile_data = IntArray( -1048578, 1073741824, -1, 1073741824 )
 
 [node name="Bush 1" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( -11, -55 )
+transform/pos = Vector2( -11, -53 )
 
 [node name="Bush 1 2" parent="." instance=ExtResource( 2 )]
 
@@ -55,11 +55,12 @@ transform/pos = Vector2( -72, -58 )
 
 [node name="Statue" parent="." instance=ExtResource( 3 )]
 
-transform/pos = Vector2( -12, -97 )
+transform/pos = Vector2( -9, -101 )
 
 [node name="Bush 2" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( -65, -75 )
+transform/pos = Vector2( -61.4045, -72.2685 )
+transform/scale = Vector2( 1.01264, 1.00839 )
 
 [node name="RigidBody2D" parent="." instance=ExtResource( 5 )]
 
@@ -67,7 +68,7 @@ transform/pos = Vector2( 51, -112 )
 
 [node name="Bush3" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 22, -75 )
+transform/pos = Vector2( 25, -64 )
 
 [node name="Bench" parent="." instance=ExtResource( 6 )]
 
@@ -99,11 +100,11 @@ transform/pos = Vector2( -72, -88 )
 
 [node name="Winter Tree3" parent="." instance=ExtResource( 8 )]
 
-transform/pos = Vector2( -24, -117 )
+transform/pos = Vector2( -26, -117 )
 
 [node name="Winter Tree4" parent="." instance=ExtResource( 8 )]
 
-transform/pos = Vector2( -16, -108 )
+transform/pos = Vector2( -16, -114 )
 
 [node name="Winter Tree5" parent="." instance=ExtResource( 8 )]
 
@@ -119,11 +120,11 @@ transform/pos = Vector2( -3, -45 )
 
 [node name="Summer Tree KEY" parent="." instance=ExtResource( 11 )]
 
-transform/pos = Vector2( -14, -84 )
+transform/pos = Vector2( -18, -84 )
 
 [node name="Rock 1" parent="." instance=ExtResource( 12 )]
 
-transform/pos = Vector2( 59, -64 )
+transform/pos = Vector2( 61, -63 )
 
 [node name="Rock 1 2" parent="." instance=ExtResource( 12 )]
 
