@@ -167,11 +167,11 @@ stream/buffering_ms = 500
 [node name="BlueRuby" parent="." instance=ExtResource( 12 )]
 
 visibility/visible = false
-transform/pos = Vector2( -35, -76 )
+transform/pos = Vector2( -34, -76 )
 
 [node name="PurpleRuby" parent="." instance=ExtResource( 13 )]
 
 visibility/visible = false
-transform/pos = Vector2( -55, -62 )
+transform/pos = Vector2( 23, -43 )
 
 

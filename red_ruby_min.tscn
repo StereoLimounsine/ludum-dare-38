@@ -15,7 +15,7 @@ z/z = 2
 input/pickable = true
 shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 0.0513656, 0, 0, 0.0540985, -0.0175157, 0.021079 )
-shapes/0/trigger = false
+shapes/0/trigger = true
 collision/layers = 1
 collision/mask = 1
 mode = 1
@@ -43,7 +43,7 @@ texture = ExtResource( 1 )
 transform/pos = Vector2( -0.0175157, 0.021079 )
 transform/scale = Vector2( 0.0513656, 0.0540985 )
 shape = SubResource( 1 )
-trigger = false
+trigger = true
 _update_shape_index = 0
 
 [node name="Area2D" parent="." instance=ExtResource( 2 )]

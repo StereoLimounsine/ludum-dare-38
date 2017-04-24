@@ -21,7 +21,12 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 0.2, 0.4, 0.6, 0.8 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 2 ) ] }
+tracks/0/keys = {
+"times": FloatArray( 0, 0.2, 0.4, 0.6, 0.8 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 2 ) ]
+}
 
 [node name="Yellow ruby" type="RigidBody2D"]
 
@@ -30,7 +35,7 @@ z/z = 2
 input/pickable = true
 shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 0.0520834, 0, 0, 0.0514146, -0.00364878, 0.00873187 )
-shapes/0/trigger = false
+shapes/0/trigger = true
 collision/layers = 1
 collision/mask = 1
 mode = 1
@@ -56,7 +61,7 @@ damp_override/angular = -1.0
 transform/pos = Vector2( -0.00364878, 0.00873187 )
 transform/scale = Vector2( 0.0520834, 0.0514146 )
 shape = SubResource( 1 )
-trigger = false
+trigger = true
 _update_shape_index = 0
 
 [node name="Area2D" parent="." instance=ExtResource( 1 )]
