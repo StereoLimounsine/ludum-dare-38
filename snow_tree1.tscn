@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=1]
+[gd_scene load_steps=4 format=1]
 
 [ext_resource path="res://sprites/snow/snow_tree2.png" type="Texture" id=1]
+[ext_resource path="res://interactor.tscn" type="PackedScene" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -43,4 +44,14 @@ shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
 
+[node name="Area2D" parent="." instance=ExtResource( 2 )]
 
+transform/pos = Vector2( -0.605759, 1.59187 )
+transform/scale = Vector2( 0.644531, 1.20312 )
+
+[node name="Message" parent="Area2D"]
+
+text = "Snow Tree 1"
+
+
+[editable path="Area2D"]

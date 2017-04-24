@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=1]
+[gd_scene load_steps=8 format=1]
 
 [ext_resource path="res://sprites/snow/frozen_statue.png" type="Texture" id=1]
+[ext_resource path="res://interactor.tscn" type="PackedScene" id=2]
 
 [sub_resource type="SegmentShape2D" id=1]
 
@@ -104,4 +105,14 @@ shape = SubResource( 5 )
 trigger = false
 _update_shape_index = 4
 
+[node name="Area2D" parent="." instance=ExtResource( 2 )]
 
+transform/pos = Vector2( -2.01654, 24.5919 )
+transform/scale = Vector2( 2.65979, 1.51562 )
+
+[node name="Message" parent="Area2D"]
+
+text = "Iced Statue"
+
+
+[editable path="Area2D"]
