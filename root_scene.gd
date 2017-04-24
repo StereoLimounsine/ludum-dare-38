@@ -58,6 +58,7 @@ func switch_scene():
 
 func _fixed_process(delta):
 	if(Input.is_key_pressed(KEY_ESCAPE)):
+		get_node("Label").clear()
 		add_child(exit_scene)
 		exit_state = true
 	if(Input.is_key_pressed(KEY_P) && exit_state == true):

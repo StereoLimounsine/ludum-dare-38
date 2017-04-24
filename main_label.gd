@@ -17,8 +17,11 @@ func delayed_clear_text(caller):
 	timer.connect("timeout", self, "clear_text", [caller])
 	timer.start()
 
+func clear():
+	set_text("")
+	set_hidden(true)
+
 func clear_text(caller):
 	if(get_meta("last") == caller):
-		set_text("")
-		set_hidden(true)
+		clear()
 		get_node("Timer").stop()
